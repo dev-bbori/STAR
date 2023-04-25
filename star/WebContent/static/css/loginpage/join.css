@@ -137,7 +137,7 @@ button span {
     margin-top: 20px;
     display: inline-block;
     font-size: 13px;
-    color: red;
+    color: #388e3c;
 }
 
 .join .btn-add {
@@ -217,4 +217,8 @@ label.error {
 .btn_user_submit {
     background: #fafafa;
     color: rgba(0,0,0,0.16);
+}
+
+input:focus {
+    outline: 1px solid red;
 }

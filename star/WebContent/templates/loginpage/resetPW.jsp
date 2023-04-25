@@ -40,6 +40,7 @@
 	    </section>
 	</div>
 </body>
+
 <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script>
 
@@ -64,5 +65,9 @@ $(document).ready(function() {
  
     });
 });
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+
 </script>
 </html>

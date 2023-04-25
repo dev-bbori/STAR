@@ -137,5 +137,5 @@
 		</div>
 	</div>
 </body>
-<script src="../../static/js/header.js"></script>
+<script src="../../static/js/mypage/header.js"></script>
 </html>

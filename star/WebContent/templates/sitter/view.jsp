@@ -14,7 +14,7 @@
         <section>
             <div>
 			<div>
-                <img style="width: 150px; height: 150px; margin-left: -90px; margin-top: -33px;" src="../../static/image/2.png">
+                <img style="width: 150px; height: 150px; margin-left: -90px; margin-top: -33px;" src="../../static/image/3.png">
                 </div>
             <h1>                 
                 <a href="../../templates/mainpage.jsp" id="bannertext">Save The Animal Relationship</a>

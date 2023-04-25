@@ -14,7 +14,6 @@
 			<div class="btns">
 				<a id="gomain" href="메인 페이지">사이트 바로가기</a>
 			</div>
-			<p>사이트 관리</p>
 			<ul class="menubar">
 				<li><label for="btns"><input class="btns selected"
 						type="button" value="메인페이지"
@@ -212,31 +211,31 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>1</td>
-										<td>김진</td>
-										<td>q1w2e3r4</td>
+										<td></td>
+										<td></td>
+										<td></td>
 									</tr>
 									<tr>
-										<td>1</td>
-										<td>김진</td>
-										<td>q1w2e3r4</td>
+										<td></td>
+										<td></td>
+										<td></td>
 									</tr>
 									<tr>
-										<td>1</td>
-										<td>김진</td>
-										<td>q1w2e3r4</td>
+										<td></td>
+										<td></td>
+										<td></td>
 									</tr>
 									<tr>
-										<td>1</td>
-										<td>김진</td>
-										<td>q1w2e3r4</td>
+										<td></td>
+										<td></td>
+										<td></td>
 									</tr>
 									<tr>
-										<td>1</td>
-										<td>김진</td>
-										<td>q1w2e3r4</td>
+										<td></td>
+										<td></td>
+										<td></td>
 									</tr>
-
+									
 								</tbody>
 							</table>			
 							

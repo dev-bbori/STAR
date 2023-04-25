@@ -5,7 +5,6 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="../../static/css/sitter/found.css">
-<link rel="stylesheet" href="../../static/js/summernote/banner.js">
 <title>돌봄이 찾기</title>
 </head>
 <body class="pc">
@@ -13,7 +12,7 @@
 	<header id="menu">
         <section>
 			<div>
-                <img style="width: 150px; height: 150px; margin-left: -90px; margin-top: -33px;" src="../../static/image/2.png">
+                <img style="width: 150px; height: 150px; margin-left: -90px; margin-top: -33px;" src="../../static/image/3.png">
                 </div>
             <h1>                 
                 <a href="../../templates/mainpage.jsp" id="bannertext">Save The Animal Relationship</a>

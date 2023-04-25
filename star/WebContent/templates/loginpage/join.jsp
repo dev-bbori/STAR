@@ -26,29 +26,47 @@
 		            <b>아이디</b>
 		            <div class="inp_type_2 form-errors">
 		            	<!-- focus / err -->
-		                <input type="email" name="uid" id="gcuseremail" placeholder="이메일 주소를 입력해주세요.">
+		                <input type="email" name="userId" id="gcuseremail" placeholder="이메일 주소를 입력해주세요.">
 						<label id="gcuseremail_msg" class="validate_msg_label" style="color: red;"></label>
 		            </div>
 		
 		            <b>비밀번호</b>
 		            <div class="inp_type_2 form-errors form-password-rule">
-		                <input type="password" name="upw" placeholder="비밀번호를 입력해주세요." id="new_pw">
+		                <input type="password" name="userPw" placeholder="비밀번호를 입력해주세요." id="new_pw">
 						<label id="new_pw_msg" class="validate_msg_label"></label>
 		            </div>
 		
 		            <b>비밀번호 확인</b>
 		            <div class="inp_type_2 form-errors">
+
 		                <input type="password" name="upw_retry" placeholder="비밀번호를 다시 입력해주세요." id="new_pw_re">
+
+		                <input type="password" name="userPw_retry" placeholder="비밀번호를 입력해주세요." id="new_pw_re">
+
 						<label id="new_pw_re_msg" class="validate_msg_label"></label>
 		            </div>
 		            
 		            <b>이 름</b>
 		            <div class="inp_type_2 form-errors form-username">
+
 		                <input type="text" name="uname" id="gcusername" placeholder="이름을 입력해주세요.">
 						<label id="name2" class="validate_msg_label" style="color: red;"></label>
 		            </div>
 		            
 		            <button type="button" id="joinBtn" class="btn_link gra_left_right_red btn_user_submit"  style="background-color: rgb(250, 250, 250); color: rgba(0, 0, 0, 0.16); border: none;">
+
+		                <input type="text" name="userName" id="gcusername" placeholder="이름을 입력해주세요.">
+						<label id="" class="validate_msg_label" style="color: red;"></label>
+		            </div>
+		            
+		            <b>나 이</b>
+		            <div class="inp_type_2 form-errors form-userage">
+		                <input type="text" name="userAge" id="gcuserage" placeholder="나이를 입력해주세요.">
+						<label id="" class="validate_msg_label" style="color: red;"></label>
+		            </div>
+		            
+		            <button type="button" id="joinBtn" class="btn_link gra_left_right_red btn_user_submit" disabled="disabled" style="background-color: rgb(250, 250, 250); color: rgba(0, 0, 0, 0.16); border: none;">
+
 		            	<span>가입하기</span>
 		            </button>
 		        </div>
@@ -149,7 +167,6 @@ $("#gcusername").blur(function(){
 });    
       
 });
-
 
 </script>
 </html>

@@ -14,7 +14,6 @@
 			<div class="btns">
 				<a id="gomain" href="메인 페이지">사이트 바로가기</a>
 			</div>
-			<p>사이트 관리</p>
 			<ul class="menubar">
 				<li><label for="btns"><input class="btns" type="button"
 						value="메인페이지" onClick="location.href='mainadmin.jsp'"></label></li>
