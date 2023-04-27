@@ -137,5 +137,9 @@
 		</div>
 	</div>
 </body>
+<<<<<<< HEAD
 <script src="../../static/js/mypage/header.js"></script>
+=======
+<script src="${pageContext.request.contextPath}/static/js/header.js"></script>
+>>>>>>> c9b506e (백업본)
 </html>

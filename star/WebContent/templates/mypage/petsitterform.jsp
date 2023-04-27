@@ -65,7 +65,7 @@
 						<span class="tab_btn">돌보미 신청서 작성</span>
 					</div>
 					<div class="tab_each" style="display: block;">
-						<form action="">
+						<form name="joinpetsitter" action="get">
 							<section class="info_wrap">
 								<div class="title_block">
 									<b>제목</b>

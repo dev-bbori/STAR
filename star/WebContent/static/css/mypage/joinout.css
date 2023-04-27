@@ -201,3 +201,8 @@ li {
     font-weight: 600;
     font-family: inherit;
 }
+
+.lastinput {
+	width: 15px;
+	height: 15px;
+}

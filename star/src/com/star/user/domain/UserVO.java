@@ -5,13 +5,10 @@ public class UserVO {
 	private String userId;
 	private String userPassword;
 	private String userName;
-	private String userAddress1;
-	private String userAddress2;
-	private String userAddress3;
+	private String userAddress;
 	private String userPhonenumber;
 	private int userAge;
 	private String userGender;
-	private String userEmail;
 	private String userStatus;
 	private String userTitle;
 	private String userContent;
@@ -51,30 +48,6 @@ public class UserVO {
 		this.userName = userName;
 	}
 
-	public final String getUserAddress1() {
-		return userAddress1;
-	}
-
-	public final void setUserAddress1(String userAddress1) {
-		this.userAddress1 = userAddress1;
-	}
-
-	public final String getUserAddress2() {
-		return userAddress2;
-	}
-
-	public final void setUserAddress2(String userAddress2) {
-		this.userAddress2 = userAddress2;
-	}
-
-	public final String getUserAddress3() {
-		return userAddress3;
-	}
-
-	public final void setUserAddress3(String userAddress3) {
-		this.userAddress3 = userAddress3;
-	}
-
 	public final String getUserPhonenumber() {
 		return userPhonenumber;
 	}
@@ -99,13 +72,6 @@ public class UserVO {
 		this.userGender = userGender;
 	}
 
-	public final String getUserEmail() {
-		return userEmail;
-	}
-
-	public final void setUserEmail(String userEmail) {
-		this.userEmail = userEmail;
-	}
 
 	public final String getUserStatus() {
 		return userStatus;
@@ -142,9 +108,9 @@ public class UserVO {
 	@Override
 	public String toString() {
 		return "UserVO [userNumber=" + userNumber + ", userId=" + userId + ", userPassword=" + userPassword
-				+ ", userName=" + userName + ", userAddress1=" + userAddress1 + ", userAddress2=" + userAddress2
-				+ ", userAddress3=" + userAddress3 + ", userPhonenumber=" + userPhonenumber + ", userAge=" + userAge
-				+ ", userGender=" + userGender + ", userEmail=" + userEmail + ", userStatus=" + userStatus
+				+ ", userName=" + userName + ", userAddress=" + userAddress
+				+ ",  userPhonenumber=" + userPhonenumber + ", userAge=" + userAge
+				+ ", userGender=" + userGender + ", userStatus=" + userStatus
 				+ ", userTitle=" + userTitle + ", userContent=" + userContent + ", userStar=" + userStar + "]";
 	}
 

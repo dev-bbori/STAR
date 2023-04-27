@@ -32,7 +32,8 @@
 						<li class="radio-list__item">
 							<div class="select-item-area">
 								<div style="display: inline-block;vertical-align: text-top;width: 20px;height: 20px;overflow: hidden;margin-right: 12px;">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
+									<input type="checkbox">
+									<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
 										<defs>
 											<clipPath id="__lottie_element_2">
 												<rect width="60" height="60" x="0" y="0"></rect>
@@ -45,7 +46,7 @@
 												</g>
 											</g>
 										</g>
-									</svg>
+									</svg> -->
 								</div>
 								<span>사용을 잘 안하게 돼요</span>
 							</div>
@@ -53,7 +54,8 @@
 						<li class="radio-list__item">
 							<div class="select-item-area">
 								<div style="display: inline-block;vertical-align: text-top;width: 20px;height: 20px;overflow: hidden;margin-right: 12px;">
-									<svg id="click" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
+									<input type="checkbox">
+									<!-- <svg id="click" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
 										<defs>
 											<clipPath id="__lottie_element_2">
 												<rect width="60" height="60" x="0" y="0"></rect>
@@ -66,7 +68,7 @@
 												</g>
 											</g>
 										</g>
-									</svg>
+									</svg> -->
 								</div>
 								<span>예약하고 싶은 숙소가 없어요</span>
 							</div>
@@ -74,7 +76,8 @@
 						<li class="radio-list__item">
 							<div class="select-item-area">
 								<div style="display: inline-block;vertical-align: text-top;width: 20px;height: 20px;overflow: hidden;margin-right: 12px;">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
+									<input type="checkbox">
+									<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
 										<defs>
 											<clipPath id="__lottie_element_2">
 												<rect width="60" height="60" x="0" y="0"></rect>
@@ -87,7 +90,7 @@
 												</g>
 											</g>
 										</g>
-									</svg>
+									</svg> -->
 								</div>
 								<span>예약, 취소, 혜택받기 등 사용이 어려어요</span>
 							</div>
@@ -95,7 +98,8 @@
 						<li class="radio-list__item">
 							<div class="select-item-area">
 								<div style="display: inline-block;vertical-align: text-top;width: 20px;height: 20px;overflow: hidden;margin-right: 12px;">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
+									<input type="checkbox">
+									<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
 										<defs>
 											<clipPath id="__lottie_element_2">
 												<rect width="60" height="60" x="0" y="0"></rect>
@@ -108,7 +112,7 @@
 												</g>
 											</g>
 										</g>
-									</svg>
+									</svg> -->
 								</div>
 								<span>혜택(쿠폰,포인트)이 너무 적어요</span>
 							</div>
@@ -116,7 +120,8 @@
 						<li class="radio-list__item">
 							<div class="select-item-area">
 								<div style="display: inline-block;vertical-align: text-top;width: 20px;height: 20px;overflow: hidden;margin-right: 12px;">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
+									<input type="checkbox">
+									<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
 										<defs>
 											<clipPath id="__lottie_element_2">
 												<rect width="60" height="60" x="0" y="0"></rect>
@@ -129,7 +134,7 @@
 												</g>
 											</g>
 										</g>
-									</svg>
+									</svg> -->
 								</div>
 								<span>개인정보 보호를 위해 삭제할 정보가 있어요</span>
 							</div>
@@ -137,7 +142,8 @@
 						<li class="radio-list__item">
 							<div class="select-item-area">
 								<div style="display: inline-block;vertical-align: text-top;width: 20px;height: 20px;overflow: hidden;margin-right: 12px;">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
+									<input type="checkbox">
+									<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
 										<defs>
 											<clipPath id="__lottie_element_2">
 												<rect width="60" height="60" x="0" y="0"></rect>
@@ -150,7 +156,7 @@
 												</g>
 											</g>
 										</g>
-									</svg>
+									</svg> -->
 								</div>
 								<span>예약하고 싶은 숙소가 없어요</span>
 							</div>
@@ -158,7 +164,8 @@
 						<li class="radio-list__item">
 							<div class="select-item-area">
 								<div style="display: inline-block;vertical-align: text-top;width: 20px;height: 20px;overflow: hidden;margin-right: 12px;">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
+									<input type="checkbox">
+									<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
 										<defs>
 											<clipPath id="__lottie_element_2">
 												<rect width="60" height="60" x="0" y="0"></rect>
@@ -171,7 +178,7 @@
 												</g>
 											</g>
 										</g>
-									</svg>
+									</svg> -->
 								</div>
 								<span>다른 계정이 있어요</span>
 							</div>
@@ -179,7 +186,8 @@
 						<li class="radio-list__item">
 							<div class="select-item-area">
 								<div style="display: inline-block;vertical-align: text-top;width: 20px;height: 20px;overflow: hidden;margin-right: 12px;">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
+									<input type="checkbox">
+									<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
 										<defs>
 											<clipPath id="__lottie_element_2">
 												<rect width="60" height="60" x="0" y="0"></rect>
@@ -192,7 +200,7 @@
 												</g>
 											</g>
 										</g>
-									</svg>
+									</svg> -->
 								</div>
 								<span>기타</span>
 							</div>
@@ -215,7 +223,8 @@
 						<div class="checkbox-area">
 							<div class="checkbox">
 								<div style="display: inline-block;vertical-align: text-top;width: 20px;height: 20px;overflow: hidden;margin: 0px 8px 0px auto;">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
+									<input type="checkbox" class="lastinput">
+									<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
 										<g clip-path="url(#__lottie_element_58)">
 											<g transform="matrix(0.949999988079071,0,0,0.949999988079071,30,30)" opacity="1" style="display: block;">
 												<g opacity="1" transform="matrix(3,0,0,3,0,0)">
@@ -223,7 +232,7 @@
 												</g>
 											</g>
 										</g>
-									</svg>
+									</svg> -->
 								</div>
 							</div>
 							<span class="checkbox-area__text">위 주의사항을 모두 숙지했고,탈퇴에 동의합니다</span>

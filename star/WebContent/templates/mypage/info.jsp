@@ -14,6 +14,8 @@
             <section>
                 <div>
                 <img style="width: 150px;
+                
+                
    					 height: 150px;
     				margin-left: -90px;
     				margin-top: -33px;" 

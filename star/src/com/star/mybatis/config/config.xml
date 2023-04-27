@@ -7,6 +7,14 @@
 	</settings>
 	
 	<typeAliases>
+		<!-- <typeAlias type="com.star.board.domain.BoardVO" alias="boardVO"/>
+		<typeAlias type="com.star.board.domain.AnswerVO" alias="answerVO"/>
+		<typeAlias type="com.star.board.domain.PetVO" alias="petVO"/>
+		<typeAlias type="com.star.board.domain.QuestVO" alias="questVO"/>
+		<typeAlias type="com.star.board.domain.ReportVO" alias="reportVO"/>
+		<typeAlias type="com.star.board.domain.ReviewVO" alias="reviewVO"/>
+		<typeAlias type="com.star.board.domain.UseVO" alias="useVO"/> -->
+		<typeAlias type="com.star.user.domain.UserVO" alias="UserVO"/>
 	
 	</typeAliases>
 
@@ -15,13 +23,23 @@
 			<transactionManager type="JDBC"/>
 			<dataSource type="POOLED">
 				<property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-				<property name="url" value="jdbc:mysql://localhost:3306/app"/>
+				<property name="url" value="jdbc:mysql://localhost:3306/star"/>
 				<property name="username" value="root"/>
 				<property name="password" value="1234"/>
 			</dataSource>
 		</environment>
 	</environments>
-	
+	<mappers>
+		<mapper resource="com/star/mybatis/mapper/userMapper.xml"/>
+		<!-- <mapper resource="com/star/mybatis/mapper/boardMapper.xml"/>
+		<mapper resource="com/star/mybatis/mapper/useMapper.xml"/>
+		<mapper resource="com/star/mybatis/mapper/petMapper.xml"/>
+		<mapper resource="com/star/mybatis/mapper/answerMapper.xml"/>
+		<mapper resource="com/star/mybatis/mapper/fileMapper.xml"/>
+		<mapper resource="com/star/mybatis/mapper/questMapper.xml"/>
+		<mapper resource="com/star/mybatis/mapper/reportMapper.xml"/>
+		<mapper resource="com/star/mybatis/mapper/reviewMapper.xml"/> -->
+	</mappers>
 </configuration>
 
 

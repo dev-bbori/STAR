@@ -58,7 +58,7 @@
 					<td>q1w2e3r4</td>
 					<td>로그아웃 버튼이	안눌려요!</td>
 					<td>2023/04/19</td>
-					<td>미답</td>
+					<td>미답변</td>
 				</tr>
 				<tr>
 					<td><input type="checkbox" name="delete-report" class="term"/></td>
@@ -263,7 +263,6 @@
 		</section>
 	</main>
 </body>
-
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
