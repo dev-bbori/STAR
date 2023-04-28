@@ -1,6 +1,7 @@
 package com.star.mybatis.config;
 
 import java.io.IOException;
+
 import java.io.Reader;
 
 import org.apache.ibatis.io.Resources;
@@ -23,5 +24,4 @@ public class MyBatisConfig {
 	public static SqlSessionFactory getSqlSessionFactory() {
 		return sqlSessionFactory;
 	}
-
 }

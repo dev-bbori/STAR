@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="../../static/css/sitter/found.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/sitter/found.css">
 <title>돌봄이 찾기</title>
 </head>
 <body class="pc">
@@ -85,22 +85,6 @@
                                         value="332"><label for="tmino_23" class="label_chk">마포구</label></li>
                             </ul>
                         </section>
-                        <section><strong>경기도<button type="button">모두 보기</button></strong>
-                            <ul class="hide_type half">
-                                <li><input type="checkbox" id="tmino_31" class="inp_chk"
-                                        value="227"><label for="tmino_31" class="label_chk">수원</label></li>
-                                <li><input type="checkbox" id="tmino_32" class="inp_chk"
-                                        value="228"><label for="tmino_32" class="label_chk">성남</label></li>
-                                <li><input type="checkbox" id="tmino_33" class="inp_chk"
-                                        value="229"><label for="tmino_33" class="label_chk">의정부</label></li>
-                                <li><input type="checkbox" id="tmino_34" class="inp_chk"
-                                        value="230"><label for="tmino_34" class="label_chk">안양</label></li>
-                                <li><input type="checkbox" id="tmino_35" class="inp_chk"
-                                        value="231"><label for="tmino_35" class="label_chk">시흥</label></li>
-                                <li><input type="checkbox" id="tmino_36" class="inp_chk"
-                                        value="232"><label for="tmino_36" class="label_chk">용인</label></li>
-                            </ul>
-                        </section>
                         <!-- <section><strong><button type="button">모두 보기</button></strong>
                             <ul class="hide_type half">
                                 <li><input type="checkbox" id="tmino_37" class="inp_chk"
@@ -130,8 +114,10 @@
                             </div> 
                         </div>
                         <div id="poduct_list_area">
-                            <li class="list_4 adcno6">
-                                <a href="http://localhost:8090/day01/templates/sitter/view.jsp">
+                        	<ul>
+                        	</ul>
+                         <%--    <li class="list_4 adcno6">
+                                <a href="${pageContext.request.contextPath}/sitterDetailOk.user?userNumber=1">
                                     <p class="pic">
                                         <img class="lazy" src="https://image-notepet.akamaized.net/seimage/20170802%2F46f8a4d185319d0b9bed3053090ae7c0.jpg" style="display: inline;">
                                     </p>
@@ -150,8 +136,8 @@
                                         </div>
                                     </div>
                                 </a>
-                            </li>
-                            <li class="list_4 adcno6">
+                            </li> --%>
+                           <!--  <li class="list_4 adcno6">
                                 <a href="http://localhost:8090/day01/templates/sitter/view.jsp">
                                     <p class="pic">
                                         <img class="lazy" src="https://image-notepet.akamaized.net/seimage/20170802%2F46f8a4d185319d0b9bed3053090ae7c0.jpg" style="display: inline;">
@@ -234,7 +220,7 @@
                                         </div>
                                     </div>
                                 </a>
-                            </li>
+                            </li> -->
                         </div>
                     </div>
                 </div>
@@ -285,4 +271,10 @@ document.addEventListener('scroll', () => {
 });
 
 </script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+	let users = `${users}`;
+	let contextPath = `${pageContext.request.contextPath}`;
+</script>
+<script src="${pageContext.request.contextPath}/static/js/sitter/list.js"></script>
 </html>

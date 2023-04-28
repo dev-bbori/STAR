@@ -24,23 +24,29 @@ public Result execute(HttpServletRequest req, HttpServletResponse resp) throws I
 	String userAge = req.getParameter("userAge");
 	String userGender = req.getParameter("userGender");
 	
-	
 	Result result = new Result();
 	UserDAO userdao = new UserDAO();
 	UserVO uservo = new UserVO();
 	
 	uservo.setUserId(userId);
+	
+	System.out.println(userId);
+	
 	uservo.setUserPassword(userPassword);
 	uservo.setUserName(userName);
-	uservo.setUserName(userAddress);
+	uservo.setUserAddress(userAddress);
+	
+	System.out.println(userAddress);
+	
 	uservo.setUserPhonenumber(userPhonenumber);
-	uservo.setUserName(userAge);
-	uservo.setUserName(userGender);
-	
+	uservo.setUserAge(Integer.parseInt(userAge));
+	uservo.setUserGender(userGender);
 	userdao.insert(uservo);
+
 	result.setRedirect(true);
-	result.setPath("login.User");
-	
+	result.setPath("login.user");
+
 	return result;
+	
 }
 }

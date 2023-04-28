@@ -51,8 +51,26 @@
                     <div class="inp_wrap remove inp_type_2">
                         <input type="tel" name="userPhonenumber" id="phone_number" maxlength="11" placeholder="휴대폰 번호를 입력해주세요">                   
                     </div>
+                    
+                    <b>주 소</b>
+		            <div class="inp_type_2 form-errors form-username">
+		                <input type="text" name="userAddress" id="gcusername" placeholder="">
+						<label id="age" class="validate_msg_label" style="color: red;"></label>
+		            </div>
 					
-		            <button type="submit" id="joinBtn" class="btn_link gra_left_right_red btn_user_submit"  style="background-color: rgb(250, 250, 250); color: rgba(0, 0, 0, 0.16); border: none; margin-top: 100px;">
+					<b>나 이</b>
+		            <div class="inp_type_2 form-errors form-username">
+		                <input type="text" name="userAge" id="gcusername" placeholder="나이를 입력해주세요">
+						<label id="age" class="validate_msg_label" style="color: red;"></label>
+		            </div> 
+
+                    <b>성 별</b>
+		            <div class="inp_type_2 form-errors form-username">
+		                <input type="text" name="userGender" id="gcusername" placeholder=" 남,여 로 입력해주세요.">
+						<label id="gender" class="validate_msg_label" style="color: red;"></label>
+		            </div> 
+		            
+		            <button type="submit" id="joinBtn" class="btn_link gra_left_right_red btn_user_submit"  style="background-color: rgb(250, 250, 250); color: rgba(0, 0, 0, 0.16); border: none; margin-top: 70px;">
 		            	<span>가입하기</span>
 		            </button>
 		        </div>
@@ -84,6 +102,10 @@ var sendOkButtonId = 'button.btn_ok.btn_confirm';
 var sendcheckButtonId = 'button.btn_checked';
 var timerId = '#verificationCode span.timer';
 
+
+function fuc(userAddress) {
+	  document.joinForm.selectAddress.value  = userAddress;
+	}
  $(document).ready(function() {
 
     var youhyo =/([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/ ;

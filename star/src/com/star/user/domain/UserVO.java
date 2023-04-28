@@ -13,105 +13,138 @@ public class UserVO {
 	private String userTitle;
 	private String userContent;
 	private int userStar;
+	private String userRegistrationDate;
+	private String userEndDate;
 	
 	public UserVO() {;}
 
-	public final Long getUserNumber() {
+	public Long getUserNumber() {
 		return userNumber;
 	}
 
-	public final void setUserNumber(Long userNumber) {
+	public void setUserNumber(Long userNumber) {
 		this.userNumber = userNumber;
 	}
 
-	public final String getUserId() {
+	public String getUserId() {
 		return userId;
 	}
 
-	public final void setUserId(String userId) {
+	public void setUserId(String userId) {
 		this.userId = userId;
 	}
 
-	public final String getUserPassword() {
+	public String getUserPassword() {
 		return userPassword;
 	}
 
-	public final void setUserPassword(String userPassword) {
+	public void setUserPassword(String userPassword) {
 		this.userPassword = userPassword;
 	}
 
-	public final String getUserName() {
+	public String getUserName() {
 		return userName;
 	}
 
-	public final void setUserName(String userName) {
+	public void setUserName(String userName) {
 		this.userName = userName;
 	}
 
-	public final String getUserPhonenumber() {
+
+	public String getUserAddress() {
+		return userAddress;
+	}
+
+	public void setUserAddress(String userAddress) {
+		this.userAddress = userAddress;
+	}
+
+	public String getUserPhonenumber() {
 		return userPhonenumber;
 	}
 
-	public final void setUserPhonenumber(String userPhonenumber) {
+	public void setUserPhonenumber(String userPhonenumber) {
 		this.userPhonenumber = userPhonenumber;
 	}
 
-	public final int getUserAge() {
+	public int getUserAge() {
 		return userAge;
 	}
 
-	public final void setUserAge(int userAge) {
+	public void setUserAge(int userAge) {
 		this.userAge = userAge;
 	}
 
-	public final String getUserGender() {
+	public String getUserGender() {
 		return userGender;
 	}
 
-	public final void setUserGender(String userGender) {
+	public void setUserGender(String userGender) {
 		this.userGender = userGender;
 	}
 
 
-	public final String getUserStatus() {
+	public String getUserStatus() {
+
 		return userStatus;
 	}
 
-	public final void setUserStatus(String userStatus) {
+	public void setUserStatus(String userStatus) {
 		this.userStatus = userStatus;
 	}
 
-	public final String getUserTitle() {
+	public String getUserTitle() {
 		return userTitle;
 	}
 
-	public final void setUserTitle(String userTitle) {
+	public void setUserTitle(String userTitle) {
 		this.userTitle = userTitle;
 	}
 
-	public final String getUserContent() {
+	public String getUserContent() {
 		return userContent;
 	}
 
-	public final void setUserContent(String userContent) {
+	public void setUserContent(String userContent) {
 		this.userContent = userContent;
 	}
 
-	public final int getUserStar() {
+	public int getUserStar() {
 		return userStar;
 	}
 
-	public final void setUserStar(int userStar) {
+	public void setUserStar(int userStar) {
 		this.userStar = userStar;
+	}
+
+	public String getUserRegistrationDate() {
+		return userRegistrationDate;
+	}
+
+	public void setUserRegistrationDate(String userRegistrationDate) {
+		this.userRegistrationDate = userRegistrationDate;
+	}
+
+	public String getUserEndDate() {
+		return userEndDate;
+	}
+
+	public void setUserEndDate(String userEndDate) {
+		this.userEndDate = userEndDate;
 	}
 
 	@Override
 	public String toString() {
 		return "UserVO [userNumber=" + userNumber + ", userId=" + userId + ", userPassword=" + userPassword
+
 				+ ", userName=" + userName + ", userAddress=" + userAddress
 				+ ",  userPhonenumber=" + userPhonenumber + ", userAge=" + userAge
 				+ ", userGender=" + userGender + ", userStatus=" + userStatus
-				+ ", userTitle=" + userTitle + ", userContent=" + userContent + ", userStar=" + userStar + "]";
+				+ ", userTitle=" + userTitle + ", userContent=" + userContent + ", userStar=" + userStar + ", userRegistrationDate="
+						+ userRegistrationDate + ", userEndDate=" + userEndDate + "]";
+
+
+
 	}
 
 	@Override
@@ -138,8 +171,7 @@ public class UserVO {
 			return false;
 		return true;
 	}
-
 	
 	
-
+	
 }
