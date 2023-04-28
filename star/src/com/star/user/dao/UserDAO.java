@@ -31,10 +31,9 @@ public class UserDAO {
 //	펫시터 찾기
 	public List<UserVO> selectAllSitter(){
 		return sqlSession.selectList("user.selectAllSitter");
-		
-		
 	}
 
+//	메인페이지 돌봄이 신청자 가져오기
 	public List<UserVO> selectCurrentSitters(){
 		return sqlSession.selectList("user.selectCurrentSitters");
 	}

@@ -238,30 +238,21 @@
 
 					<div style="box-sizing: border-box; width: 370px; height: 270px; background: #FFFFFF; border-radius: 10px; box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.09); margin: 16px 0px 16px 0px; padding: 21px;">
 						<div style="display: flex; flex-direction: row">
-							<div
-								style="display: flex; position: relative; flex-direction: row; justify-content: space-between">
-								<img id="main_hugipicture1"
-									src="https://wayo.cdn.ntruss.com/resized/pet/14a941cbbd93452ba1290508363efc69.jpg"
-									style="width: 45px; height: 45px; border-radius: 22.5px; object-fit: cover">
+							<div style="display: flex; position: relative; flex-direction: row; justify-content: space-between">
+								<img id="main_hugipicture1" src="https://wayo.cdn.ntruss.com/resized/pet/14a941cbbd93452ba1290508363efc69.jpg" style="width: 45px; height: 45px; border-radius: 22.5px; object-fit: cover">
 							</div>
-							<div
-								style="display: flex; flex-direction: column; margin-left: 18px; width: 200px">
-								<div
-									style="display: flex; flex-direction: column; justify-content: space-between">
-									<div
-										style="display: flex; flex-direction: row; align-items: center">
-										<p id="main_hugijiyeok1"
-											style="font-weight: 500; font-size: 17px; line-height: 23px; color: #393C47; margin-top: 2px; margin-bottom: 4px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap">지역</p>
+							<div style="display: flex; flex-direction: column; margin-left: 18px; width: 200px">
+								<div style="display: flex; flex-direction: column; justify-content: space-between">
+									<div style="display: flex; flex-direction: row; align-items: center">
+										<p id="main_hugijiyeok1" style="font-weight: 500; font-size: 17px; line-height: 23px; color: #393C47; margin-top: 2px; margin-bottom: 4px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap">지역</p>
 									</div>
-									<div
-										style="display: flex; flex-direction: row; align-items: center">
+									<div style="display: flex; flex-direction: row; align-items: center">
 										<div style="display: flex; flex-direction: row">
 											<p id="main_huginame1">이름</p>
 										</div>
 									</div>
 								</div>
-								<p id="main_hugi1"
-									style="font-size: 15px; font-weight: 400; line-height: 24px; color: #4D5055; height: 115px; margin-top: 18px; overflow: hidden; text-overflow: ellipsis">최고예요</p>
+								<p id="main_hugi1" style="font-size: 15px; font-weight: 400; line-height: 24px; color: #4D5055; height: 115px; margin-top: 18px; overflow: hidden; text-overflow: ellipsis">최고예요</p>
 							</div>
 						</div>
 					</div>

@@ -57,11 +57,11 @@
 
    <servlet-mapping>
   	<servlet-name>Quest</servlet-name>
-  	<url-pattern>*.Quest</url-pattern>
+  	<url-pattern>*.quest</url-pattern>
   </servlet-mapping>
   <servlet>
   	<servlet-name>Quest</servlet-name>
-  	<servlet-class>com.star.Quest.QuestFrontController</servlet-class>
+  	<servlet-class>com.star.quest.QuestFrontController</servlet-class>
   </servlet>
   
    <servlet-mapping>

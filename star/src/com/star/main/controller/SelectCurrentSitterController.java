@@ -24,6 +24,7 @@ public class SelectCurrentSitterController implements Action{
 		req.setAttribute("dolbomname2", userDAO.selectCurrentSitters().get(1));
 		req.setAttribute("dolbomname3", userDAO.selectCurrentSitters().get(2));
 		
+//		돌봄이 소개글넣기
 		req.setAttribute("dolbomsoge1", userDAO.selectCurrentSitters().get(0));
 		req.setAttribute("dolbomsoge2", userDAO.selectCurrentSitters().get(1));
 		req.setAttribute("dolbomsoge3", userDAO.selectCurrentSitters().get(2));

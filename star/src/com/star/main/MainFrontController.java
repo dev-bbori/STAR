@@ -22,6 +22,8 @@ public class MainFrontController extends HttpServlet {
 		if(target.equals("main")) {
 			result = new SelectCurrentSitterController().execute(req, resp);
 			System.out.println("호잇");
+		}else if() {
+			
 		}
 		    
 	

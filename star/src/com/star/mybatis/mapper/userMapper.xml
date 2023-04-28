@@ -26,13 +26,13 @@
 
 
 	<select id="selectCurrentSitters" resultType="UserVO">
-	select user_number,user_id,user_password,user_name,user_address,user_phonenumber,user_age,user_gender,user_status,user_title,user_content,user_star,user_registrationdate,user_enddate
+	select user_number,user_id,user_password,user_name,user_address,user_phonenumber,user_age,user_gender,user_status,user_title,user_content,user_star
 	from tbl_user u
 	where u.user_title is not null
-	order by u.user_registrationdate desc
+	order by u.user_number desc
 	</select>
 
-
+ 	
 </mapper>
 
 
