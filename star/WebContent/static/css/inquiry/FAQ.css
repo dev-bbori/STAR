@@ -472,12 +472,35 @@ ul {
 	background-size: 12px auto;
 }
 
+<<<<<<< HEAD
+.faq_list .list li .ans {
+	overflow: hidden;
+    height: 0;
+    padding: 0;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.04);
+    font-size: 14px;
+    line-height: 22px;
+    opacity: 0;
+    word-wrap: break-word;
+    word-break: break-all;
+=======
 .faq_list .list li .link.on:after {
 	background-position: 0 -8px
+>>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
 }
 
 .faq_list .list li .ans.on {
 	height: auto;
+<<<<<<< HEAD
+	opacity: 1;
+	margin-bottom: 0;
+    padding: 35px 32px;
+    border-radius: 0;
+    background: rgba(0,0,0,0.08);
+    font-size: 16px;
+    line-height: 26px;
+=======
 	margin-bottom: 12px;
 	padding: 12px 16px 13px 16px;
 	opacity: 1
@@ -494,6 +517,7 @@ ul {
 	opacity: 0;
 	word-wrap: break-word;
 	word-break: break-all;
+>>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
 }
 
 footer {

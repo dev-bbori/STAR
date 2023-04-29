@@ -15,7 +15,7 @@ public class UserVO {
 	private int userStar;
 	
 	public UserVO() {;}
-	
+
 	public Long getUserNumber() {
 		return userNumber;
 	}
@@ -89,6 +89,7 @@ public class UserVO {
 		this.userStar = userStar;
 	}
 
+	
 	@Override
 	public String toString() {
 		return "UserVO [userNumber=" + userNumber + ", userId=" + userId + ", userPassword=" + userPassword
@@ -97,6 +98,8 @@ public class UserVO {
 				+ userTitle + ", userContent=" + userContent + ", userStar=" + userStar + "]";
 	}
 
+
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -104,7 +107,6 @@ public class UserVO {
 		result = prime * result + ((userNumber == null) ? 0 : userNumber.hashCode());
 		return result;
 	}
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -120,7 +122,14 @@ public class UserVO {
 		} else if (!userNumber.equals(other.userNumber))
 			return false;
 		return true;
-	}
+
 	
 
+
+	
+
+	}	
+
+	
 }
+

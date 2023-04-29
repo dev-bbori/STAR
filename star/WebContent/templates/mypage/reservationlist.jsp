@@ -3,7 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage/reservationlist.css">
+=======
 <link rel="stylesheet" href="../../static/css/mypage/reservationlist.css">
+>>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
 <link rel="stylesheet" type="text/css"
 	href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 <meta charset="UTF-8">
@@ -137,5 +141,9 @@
 		</div>
 	</div>
 </body>
+<<<<<<< HEAD
+<script src="${pageContext.request.contextPath}/static/js/mypage/header.js"></script>
+=======
 <script src="../../static/js/mypage/header.js"></script>
+>>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
 </html>

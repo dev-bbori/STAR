@@ -5,10 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <title>자주 묻는 질문</title>
-<link href="../../static/css/inquiry/FAQ.css" rel="stylesheet"
-	type="text/css">
-<link rel="stylesheet" type="text/css"
-	href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+
+<link href="${pageContext.request.contextPath}/static/css/inquiry/FAQ.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/static/css/inquiry/FAQ.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 </head>
 <body>
 	<div class="wrap show">
@@ -365,5 +365,5 @@
 	<button class="btn_go_top" onclick="moveTop();" style="display: none;">상단으로</button>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="../../static/js/inquiry/FAQ.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/inquiry/FAQ.js"></script>
 </html>

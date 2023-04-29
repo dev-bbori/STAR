@@ -4,14 +4,18 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<<<<<<< HEAD
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/loginpage/login.css" type="text/css">
+=======
 <link rel="stylesheet" href="../../static/css/loginpage/login.css" type="text/css">
+>>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
 <title>로그인|STAR</title>
 </head>
 <style></style>
 <body>
 	<div class="layer_fix layer_unfix pop_login pop_mem_reserve">
 		<section>
-			<form id="loginForm" action="https://www.goodchoice.kr/user/loginProcess" autocomplete="off" method="post" novalidate="novalidate">
+			<form id="loginForm" action="${pageContext.request.contextPath}/loginOk.user" autocomplete="off" method="post" novalidate="novalidate">
 				<input type="hidden" name="yeogi_token" value="3172e61728d28bac94eb712b5354ca4e">
 				<div class="fix_title">
 					<strong class="logo">
@@ -19,12 +23,12 @@
 					</strong>
 				</div>
 				<div class="inp_type_1 ico_email form-errors">
-					<input id="email" type="email" name="uid" placeholder="이메일 주소" required class="required" value data-msg-required="이메일 주소를 입력해 주세요.">
+					<input id="email" type="email" name="userId" placeholder="이메일 주소" required class="required" data-msg-required="이메일 주소를 입력해 주세요.">
 					<p id="pemail"></p>
 					<button type="button" class="reset_val">초기화</button>
 				</div>
 				<div class="inp_type_1 ico_pw form-errors">
-					<input id="password" type="password" name="upw" placeholder="비밀번호" required class="required" data-msg-required="비밀번호를 입력해 주세요.">
+					<input id="password" type="password" name="userPassword" placeholder="비밀번호" required class="required" data-msg-required="비밀번호를 입력해 주세요.">
 					<p id="ppassword"></p>
 					<button type="button" class="reset_val">초기화</button>
 				</div>

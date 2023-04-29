@@ -8,6 +8,11 @@
 <link rel="apple-touch-icon-precomposed" href="path/to/favicon-152.png">
 
 <link rel="stylesheet"
+
+	href="${pageContext.request.contextPath}/static/css/adminpage/adminconstructor.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/static/css/adminpage/see-answer-detail.css">
+
 	href="../../static/css/adminpage/adminconstructor.css">
 <link rel="stylesheet"
 	href="../../static/css/adminpage/see-answer-detail.css">
