@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.star.Result;
 import com.star.main.controller.SelectCurrentSitterController;
+import com.star.main.controller.SelectMainReviewController;
 
 public class MainFrontController extends HttpServlet {
 	
@@ -22,7 +23,9 @@ public class MainFrontController extends HttpServlet {
 		if(target.equals("main")) {
 			result = new SelectCurrentSitterController().execute(req, resp);
 			System.out.println("호잇");
-		}else if() {
+			
+		}else if (target.equals("selectMainReview")) {
+			result = new SelectMainReviewController().execute(req, resp);
 			
 		}
 		    

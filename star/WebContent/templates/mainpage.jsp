@@ -252,7 +252,7 @@
 										</div>
 									</div>
 								</div>
-								<p id="main_hugi1" style="font-size: 15px; font-weight: 400; line-height: 24px; color: #4D5055; height: 115px; margin-top: 18px; overflow: hidden; text-overflow: ellipsis">최고예요</p>
+								<p id="main_hugi1" style="font-size: 15px; font-weight: 400; line-height: 24px; color: #4D5055; height: 115px; margin-top: 18px; overflow: hidden; text-overflow: ellipsis">${main_hugi1.reviewComment}</p>
 							</div>
 						</div>
 					</div>

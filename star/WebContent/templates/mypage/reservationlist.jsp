@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="../../static/css/mypage/reservationlist.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage/reservationlist.css">
 <link rel="stylesheet" type="text/css"
 	href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 <meta charset="UTF-8">
@@ -18,7 +18,7 @@
    					 height: 150px;
     				margin-left: -90px;
     				margin-top: -33px;" 
-    				src="../../static/image/3.png">
+    				src="${pageContext.request.contextPath}/static/image/3.png">
                 </div>
                 <h1>                 
                     <a href="" id="bannertext">Save The Animal Relationship</a>
@@ -78,7 +78,7 @@
 										<span>03.27 월 - 03.27 월 • 대실</span>
 									</a>
 									<p class="btn_re">
-										<a href="">다시 예약</a>
+										<a href="reviewform.jsp">이용후기작성</a>
 									</p>
 								</div>
 							</li>
@@ -94,7 +94,7 @@
 										<span>03.27 월 - 03.27 월 • 대실</span>
 									</a>
 									<p class="btn_re">
-										<a href="">다시 예약</a>
+										<a href="reviewform.jsp">이용후기작성</a>
 									</p>
 								</div>
 							</li>
@@ -110,7 +110,7 @@
 										<span>03.27 월 - 03.27 월 • 대실</span>
 									</a>
 									<p class="btn_re">
-										<a href="">다시 예약</a>
+										<a href="reviewform.jsp">이용후기작성</a>
 									</p>
 								</div>
 							</li>
@@ -126,7 +126,7 @@
 										<span>03.27 월 - 03.27 월 • 대실</span>
 									</a>
 									<p class="btn_re">
-										<a href="">다시 예약</a>
+										<a href="reviewform.jsp">이용후기작성</a>
 									</p>
 								</div>
 							</li>
@@ -137,5 +137,5 @@
 		</div>
 	</div>
 </body>
-<script src="../../static/js/mypage/header.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/mypage/header.js"></script>
 </html>
