@@ -4,7 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<<<<<<< HEAD
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/2yong/2yong.css">
+=======
 <link rel="stylesheet" href="../../static/css/2yong/2yong.css">
+>>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
 <title>Insert title here</title>
 </head>
 
@@ -222,5 +226,9 @@ document.addEventListener('scroll', () => {
 
 });
 
+</script>
+<script>
+	let reviews = JSON.parse(`${reviews}`);
+	console.log(reviews);
 </script>
 </html>

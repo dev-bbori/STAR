@@ -322,10 +322,14 @@ color: #388e3c;
         margin: 6px 0 0 0;
 }
 
-.review .guest .name{
-	margin-left: 96px;
-	    font-size: 16px;
-	    color: rgba(0,0,0,0.56);
+/* css 내가수정한부분 */
+.review .guest .name {
+   margin-left: 96px;
+   font-size: 16px;
+   color: rgba(0, 0, 0, 0.56);
+   display: flex;
+   width: 600px !important;
+   justify-content: space-between;
 }
 
 .review .guest .name b{

@@ -220,7 +220,7 @@ header section .btn_srch {
 }
 
 #menu.active {
-	position: fixed;
+	position: fixed; 
 	height: 72px;
 	display: flex;
 	justify-content: space-between;
@@ -396,8 +396,5 @@ header section .btn_srch {
 	text-align: center;
 	box-sizing: border-box;
 	vertical-align: top;
-	background: #ff0055;
-	background: -moz-linear-gradient(top, #ff0055 0%, #e62243 100%);
-	background: -webkit-linear-gradient(top, #ff0055 0%, #e62243 100%);
-	background: linear-gradient(to bottom, #ff0055 0%, #e62243 100%);
+	background:#388e3c;
 }

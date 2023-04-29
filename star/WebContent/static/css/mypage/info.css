@@ -111,7 +111,6 @@ header section h1 {
     width: 96px;
     height: 20px;
     margin: 0;
-    /* background: url(//image.goodchoice.kr/images/web_v3/h1_logo_pc_w.png) 0 0 no-repeat; */
     background-size: 96px auto;
 }
 
@@ -408,7 +407,7 @@ button {
 .mypage .pw_input__btns-wrap .btns-wrap__submit-btn {
 	border: none;
 	color: #fff;
-	background: linear-gradient(to bottom, #ff0055 0%, #e62243 100%);
+	background: linear-gradient(to bottom, #388e3c 0%, #388e3c 100%);
 }
 
 .pw_input .pw_input__btns-wrap .btns-wrap__cancel-btn {
