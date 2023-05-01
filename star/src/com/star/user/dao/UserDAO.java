@@ -1,13 +1,21 @@
 package com.star.user.dao;
 
 
+import java.util.HashMap;
+
+
 
 import java.util.HashMap;
+
 import java.util.List;
+
 
 import org.apache.ibatis.session.SqlSession;
 
 import com.star.mybatis.config.MyBatisConfig;
+
+import com.star.user.domain.*;
+
 import com.star.user.domain.UserVO;
 
 public class UserDAO {
@@ -16,13 +24,40 @@ public class UserDAO {
 	public UserDAO() {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
-//	로그인
-	public Long login(String userId,String userPassword) {
-		HashMap<String, String> loginMap = new HashMap<String,String>();
-		loginMap.put("userId", userId);
-		loginMap.put("userPassword", userPassword); 
-		return sqlSession.selectOne("user.login", loginMap);
+	
+	//회원가입
+
+	public void insert(UserVO userVO) {
+		sqlSession.insert("user.insert" , userVO);
 	}
+	
+	//로그인
+	
+	public void select(Long usernumber) {
+		sqlSession.selectOne("user.select",usernumber);
+	}
+	
+	public void findPW(String userId) {
+		sqlSession.selectOne("user.findPW",userId);
+	}
+	
+	//아이디 중복 검사
+	
+	public boolean getcountid(String userId) {
+		return (Integer)sqlSession.selectOne("user.getcountid", userId)==0;
+	}
+	
+	public Long login(String userId, String userPassword) {
+		HashMap<String, Object> loginmap = new HashMap<String, Object>();
+		loginmap.put("userId",userId);
+		loginmap.put("userPassword",userPassword);
+		
+		return sqlSession.selectOne("user.login",loginmap);
+	}
+	
+
+//	로그인
+
 
 //	public void insert(UserVO userVO) {
 //		sqlSession.insert("user.insert", userVO);
@@ -98,6 +133,7 @@ public class UserDAO {
 		updateMap.put("userNumber", userNumber);
 		sqlSession.update("user.petSitterFormOk",updateMap);
 	}
+
 
 
 }

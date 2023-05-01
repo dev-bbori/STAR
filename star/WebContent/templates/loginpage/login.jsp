@@ -9,11 +9,11 @@
 
 <title>로그인|STAR</title>
 </head>
-<style></style>
+
 <body>
 	<div class="layer_fix layer_unfix pop_login pop_mem_reserve">
 		<section>
-			<form id="loginForm" action="${pageContext.request.contextPath}/loginOk.user" autocomplete="off" method="post" novalidate="novalidate">
+			<form id="loginForm" action="${pageContext.request.contextPath}/loginok.user" method="post">
 				<input type="hidden" name="yeogi_token" value="3172e61728d28bac94eb712b5354ca4e">
 				<div class="fix_title">
 					<strong class="logo">
@@ -33,19 +33,24 @@
 				<button class="btn_link gra_left_right_red" type="submit">
 					<span>로그인</span>
 				</button>
+				</form>
+				
+				<form action="${pageContext.request.contextPath}/findPW.user">
 				<div class="link_half">
 					<div>
-						<a href="https://www.goodchoice.kr/user/passwdResetStart">
+						<a>
 							<span>비밀번호 재설정</span>
 						</a>
 					</div>
+					</form>
+					<form action="${pageContext.request.contextPath}/join.user">
 					<div>
-						<a href="https://www.goodchoice.kr/user/join">
+					<a>
 							<span>회원가입</span>
-						</a>
+							</a>
 					</div>
+					</form>
 				</div>
-			</form>
 		</section>
 	</div>
 </body>

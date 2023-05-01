@@ -98,6 +98,7 @@ public class UserVO {
 
 
 	public String getUserStatus() {
+
 		return userStatus;
 	}
 
@@ -135,6 +136,7 @@ public class UserVO {
 	public void setUserStar(int userStar) {
 		this.userStar = userStar;
 	}
+
 
 	@Override
 	public String toString() {

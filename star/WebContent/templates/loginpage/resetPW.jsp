@@ -14,7 +14,7 @@
 <body>
    <div class="layer_fix layer_unfix pop_login pop_mem_reserve new-style-form">
        <section>
-           <form id="loginForm" action="https://www.goodchoice.kr/user/passwdResetNewProcess" autocomplete="off" method="post" novalidate="novalidate">
+           <form id="loginForm" action="${pageContext.request.contextPath}/resetPWok.user" autocomplete="off" method="post" novalidate="novalidate">
                <input type="hidden" name="returnUrl" value="">
                <input type="hidden" name="yeogi_token" value="a92d03737df39a50b22a2dcec4c64c41">
    
@@ -44,6 +44,7 @@
        </section>
    </div>
 </body>
+
 <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script>
 
@@ -86,5 +87,7 @@ $(document).ready(function() {
  
     });
 });
-</script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </html>

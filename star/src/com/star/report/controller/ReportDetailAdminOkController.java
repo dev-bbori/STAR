@@ -19,8 +19,10 @@ public class ReportDetailAdminOkController implements Action {
 		Long reportId = Long.valueOf(req.getParameter("reportId"));
 		System.out.println("컨트롤러 들어옴");
 		
-		req.setAttribute("report", reportDAO.selectReportDetailAdmin(reportId));
-		System.out.println(reportDAO.selectReportDetailAdmin(reportId));
+		/*
+		 * req.setAttribute("report", reportDAO.selectReportDetailAdmin(reportId));
+		 * System.out.println(reportDAO.selectReportDetailAdmin(reportId));
+		 */
 		result.setPath("templates/adminpage/see-report-details.jsp");
 	
 		

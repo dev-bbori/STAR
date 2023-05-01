@@ -19,6 +19,7 @@
   <url-pattern>*.main</url-pattern>
   </servlet-mapping>
   
+
   <servlet>
   	<servlet-name>Board</servlet-name>
   	<servlet-class>com.star.board.BoardFrontController</servlet-class>
@@ -55,6 +56,7 @@
   	<servlet-class>com.star.pet.PetFrontController</servlet-class>
   </servlet>
 
+  
   <servlet>
      <servlet-name>Report</servlet-name>
      <servlet-class>com.star.report.ReportFrontController</servlet-class>
@@ -86,8 +88,9 @@
   
   <servlet>
   	<servlet-name>Use</servlet-name>
-  	<servlet-class>com.star.use.UseFrontController</servlet-class>
+  	<servlet-class>com.star.Use.UseFrontController</servlet-class>
   </servlet>
+  
   <servlet-mapping>
   	<servlet-name>Use</servlet-name>
   	<url-pattern>*.use</url-pattern>
@@ -104,6 +107,5 @@
   </servlet-mapping>
 
 
-  
   
 </web-app>

@@ -33,8 +33,10 @@ public class ReportLoadOkController implements Action {
       pagable.put("rowCount", 5);
       pagable.put("userNumber",(Long)session.getAttribute("userNumber"));
       
-      
-      reportDAO.selectAll(pagable).stream().map(report -> new JSONObject(report)).forEach(jsonArray::put);
+		/*
+		 * reportDAO.selectAll(pagable).stream().map(report -> new
+		 * JSONObject(report)).forEach(jsonArray::put);
+		 */
 
       PrintWriter out = resp.getWriter();
       out.print(jsonArray.toString());
