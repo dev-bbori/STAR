@@ -37,38 +37,12 @@
 		delete from tbl_report where report_id = #{reportId}
 	</delete>
    <!-- 전체목록 -->
-   <select id="selectAll" resultType="reportDTO">
-      select
-      report_id,
-      report_title,
-      report_content,
-      a.*
-      from
-      tbl_report r
-      join
-      (
-      select
-      u1.user_name,
-      u2.*
-      from
-      tbl_use u2
-      join tbl_user u1 on
-      u1.user_number
-      = u2.user_number) a on
-      r.use_number = a.use_number limit #{offset},
-      #{rowCount}
-   </select>
+  
 
    <!-- 총개수 -->
-   <select id="getTotal" resultType="_int">
-      select count(report_number)
-      from tbl_report
-   </select>
 
    <!-- 리뷰 삭제 -->
-   <delete id="delete">
-      delete from tbl_report where report_id = #{reportId}
-   </delete>
+  
 	<select id="selectReport">
 		select report_id, use_number, user_name, report_title, 
 	</select>

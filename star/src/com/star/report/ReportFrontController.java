@@ -2,6 +2,7 @@ package com.star.report;
 
 import java.io.IOException;
 
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -9,9 +10,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.star.Result;
 
-import com.star.report.controller.ReportDeleteOkController;
+/*import com.star.report.controller.ReportDeleteOkController;
 import com.star.report.controller.ReportDetailAdminOkController;
-import com.star.report.controller.ReportLoadOkController;
+import com.star.report.controller.ReportLoadOkController;*/
 
 public class ReportFrontController extends HttpServlet{
    @Override
@@ -23,14 +24,16 @@ public class ReportFrontController extends HttpServlet{
          if (target.equals("report")) {
             result = new Result();
             result.setPath("/templates/mypage/report.jsp");
-         }else if(target.equals("reportLoadOk")) {
-            result = new ReportLoadOkController().execute(req, resp);
-         }else if(target.equals("reportDeleteOk")) {
-            result= new ReportDeleteOkController().execute(req, resp);
-         }else if(target.equals("reportDetailAdmin")){
-        	 result = new ReportDetailAdminOkController().execute(req, resp);
-        	 System.out.println("프컨 처음들어옴");
-         }
+		} /*
+			 * else if(target.equals("reportLoadOk")) { result = new
+			 * ReportLoadOkController().execute(req, resp); }else
+			 * if(target.equals("reportDeleteOk")) { result= new
+			 * ReportDeleteOkController().execute(req, resp); }
+			 */ /*
+			 * else if(target.equals("reportDetailAdmin")){ result = new
+			 * ReportDetailAdminOkController().execute(req, resp);
+			 * System.out.println("프컨 처음들어옴"); }
+			 */
          
          
          
