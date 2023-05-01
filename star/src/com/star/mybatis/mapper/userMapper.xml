@@ -28,13 +28,9 @@
 	</select>
 
 
-<<<<<<< HEAD
 	<select id="selectCurrentSitters" resultType="UserVO">
 	select user_number,user_id,user_password,user_name,user_address,user_phonenumber,user_age,user_gender,user_status,user_title,user_content,user_star
-=======
-	<select id="selectCurrentSitters" resultType="userVO">
-	select user_number,user_id,user_password,user_name,user_address,user_phonenumber,user_age,user_gender,user_status,user_title,user_content,user_star,user_registrationdate,user_enddate
->>>>>>> 30c738eaebde3bd8a13ff8a0902f3ea2a3df084f
+
 	from tbl_user u
 	where u.user_title is not null
 	order by u.user_number desc

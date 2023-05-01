@@ -27,14 +27,14 @@ public class UserFrontController extends HttpServlet {
 
 		String target = req.getRequestURI().replace("/", "").split("\\.")[0];
 		Result result = new Result();
-<<<<<<< HEAD
+
 		if(target.equals("loginOk")) {
-			result = new LoginOkController().execute(req,resp);
+//			result = new LoginOkController().execute(req,resp);
 			
 		}else if(target.equals("sitterList")) {
-=======
+			
+		}
 		if(target.equals("sitterList")) {
->>>>>>> 30c738eaebde3bd8a13ff8a0902f3ea2a3df084f
 			result = new SitterListOkController().execute(req, resp);
 			
 		}else if(target.equals("sitterDetailOk")) {

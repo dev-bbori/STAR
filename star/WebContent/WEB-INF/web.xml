@@ -56,31 +56,6 @@
   </servlet>
 
   <servlet>
-<<<<<<< HEAD
-=======
-  	<servlet-name>Quest</servlet-name>
-  	<servlet-class>com.star.Quest.QuestFrontController</servlet-class>
-  </servlet>
-  
-  -->
-
-    <servlet-mapping>
-     <servlet-name>Review</servlet-name>
-     <url-pattern>*.review</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
-     <servlet-name>Review</servlet-name>
-     <servlet-class>com.star.review.ReviewFrontController</servlet-class>
-  </servlet>
-  
-     <servlet-mapping>
-     <servlet-name>Report</servlet-name>
-     <url-pattern>*.report</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
->>>>>>> 30c738eaebde3bd8a13ff8a0902f3ea2a3df084f
      <servlet-name>Report</servlet-name>
      <servlet-class>com.star.report.ReportFrontController</servlet-class>
   </servlet>
@@ -123,7 +98,6 @@
   	<servlet-name>User</servlet-name>
   	<servlet-class>com.star.user.UserFrontController</servlet-class>
   </servlet>
-<<<<<<< HEAD
    <servlet-mapping>
   	<servlet-name>User</servlet-name>
   	<url-pattern>*.user</url-pattern>
@@ -131,7 +105,5 @@
 
 
   
-=======
->>>>>>> 30c738eaebde3bd8a13ff8a0902f3ea2a3df084f
   
 </web-app>
