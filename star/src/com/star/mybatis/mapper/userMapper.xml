@@ -2,6 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="user">
 
+<<<<<<< HEAD
  
 <insert id="insert" parameterType="userVO">
 INSERT INTO star.tbl_user
@@ -37,6 +38,12 @@ where user_id = #{userId}
 </select>
 	
 	
+=======
+<insert id="insert" parameterType="userVO">
+		insert into tbl_user(user_id, user_password, user_name, user_address1, user_address2, user_address3, user_phonenumber, user_age, user_status)
+		values(#{userId}, #{userPassword}, #{userName}, #{userAddress1}, #{userAddress2}, #{userAddress3}, #{userPhonenumber}, #{userAge}, #{userStatus})
+	</insert>
+>>>>>>> 2e65e6094530990fde383ecbea84ef5ba2260698
 	
 	<select id="selectSitter" resultType="UserVO">
 		select user_name from tbl_user 
@@ -63,24 +70,46 @@ where user_id = #{userId}
 	order by u.user_registrationdate desc
 	</select>
 
+	<update id="updateName">
+		update tbl_user
+		set user_name = #{userName}
+		where user_number = #{userNumber}
+	</update>
+	<update id="updateAddress">
+		update tbl_user
+		set user_address = #{userAddress}
+		where user_number = #{userNumber}
+	</update>
+	<update id="updatePhoneNumber">
+		update tbl_user
+		set user_phonenumber = #{userPhoneNumber}
+		where user_number = #{userNumber}
+	</update>
+	<update id="updateAge">
+		update tbl_user
+		set user_age = #{userAge}
+		where user_number = #{userNumber}
+	</update>
+	<update id="updateGender">
+		update tbl_user
+		set user_gender= #{userGender}
+		where user_number = #{userNumber}
+	</update>
+	<select id="selectinfo" parameterType="userVO" resultType ="userVO">
+		select user_number, user_name, user_address, user_phonenumber, user_age, user_gender from tbl_user where user_number=#{userNumber}
+	</select>
+	<select id="selectpetSitterForm" parameterType="userVO" resultType ="userVO">
+		select user_title, user_content from tbl_user where user_number=#{userNumber}
+	</select>
+	<update id="petSitterFormOk">
+		update tbl_user
+		set user_title = #{userTitle} , user_content = #{userContent}
+		where user_number = #{userNumber}
+	</update>
+	<select id="login" resultType="Long">
+		select user_number from tbl_user where user_id = #{userId} and user_password = #{userPassword}
+	</select>
+
 
 </mapper>
-
-
-
-
-
-
-
-	
-
-
-
-
-
-
-
-
-
-
 

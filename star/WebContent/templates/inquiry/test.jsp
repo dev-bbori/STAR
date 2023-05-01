@@ -5,7 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <title>1:1문의</title>
+<<<<<<< HEAD
+<link href="${pageContext.request.contextPath}/static/css/inquiry/test.css" rel="stylesheet" type="text/css">
+=======
 <link href="../../static/css/inquiry/test.css" rel="stylesheet" type="text/css">
+>>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
 </head>
 <body>
 	<div class="accordion">

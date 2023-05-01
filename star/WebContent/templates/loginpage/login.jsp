@@ -4,14 +4,22 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<<<<<<< HEAD
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/loginpage/login.css" type="text/css">
+=======
 <link rel="stylesheet" href="../../static/css/loginpage/login.css" type="text/css">
+>>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
 <title>로그인|STAR</title>
 </head>
 
 <body>
 	<div class="layer_fix layer_unfix pop_login pop_mem_reserve">
 		<section>
+<<<<<<< HEAD
 			<form id="loginForm" action="${pageContext.request.contextPath}/loginok.user" method="post">
+=======
+			<form id="loginForm" action="${pageContext.request.contextPath}/loginOk.user" autocomplete="off" method="post" novalidate="novalidate">
+>>>>>>> 2e65e6094530990fde383ecbea84ef5ba2260698
 				<input type="hidden" name="yeogi_token" value="3172e61728d28bac94eb712b5354ca4e">
 				<div class="fix_title">
 					<strong class="logo">
@@ -19,7 +27,11 @@
 					</strong>
 				</div>
 				<div class="inp_type_1 ico_email form-errors">
+<<<<<<< HEAD
 					<input id="email" type="email" name="userId" placeholder="이메일 주소" required class="required" value data-msg-required="이메일 주소를 입력해 주세요.">
+=======
+					<input id="email" type="email" name="userId" placeholder="이메일 주소" required class="required" data-msg-required="이메일 주소를 입력해 주세요.">
+>>>>>>> 2e65e6094530990fde383ecbea84ef5ba2260698
 					<p id="pemail"></p>
 					<button type="button" class="reset_val">초기화</button>
 				</div>

@@ -4,8 +4,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<<<<<<< HEAD
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/loginpage/findPW.css" type="text/css">
 <title>비밀번호 찾기|STAR</title>
+=======
+<<<<<<< HEAD
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/loginpage/findPW.css" type="text/css">
+=======
+<link rel="stylesheet" href="../../static/css/loginpage/findPW.css" type="text/css">
+>>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
+<title>비밀번호 재설정|STAR</title>
+>>>>>>> 2e65e6094530990fde383ecbea84ef5ba2260698
 </head>
 <body>
 	<div class="layer_fix layer_unfix pop_login pop_mem_reserve new-style-form">

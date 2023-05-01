@@ -5,8 +5,13 @@
 <head>
 <meta charset="UTF-8">
 <title>회원정보 조회/수정</title>
+<<<<<<< HEAD
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/adminpage/adminconstructor.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/adminpage/changeinfo.css">
+=======
 <link rel="stylesheet" href="../../static/css/adminpage/adminconstructor.css">
 <link rel="stylesheet" href="../../static/css/adminpage/changeinfo.css">
+>>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
 </head>
 <body>
 	<main>
