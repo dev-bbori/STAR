@@ -7,7 +7,6 @@
 	</settings>
 	
 	<typeAliases>
-<<<<<<< HEAD
 
 		<!--  <typeAlias type="com.star.board.domain.BoardVO" alias="boardVO"/>
 		<typeAlias type="com.star.board.domain.AnswerVO" alias="answerVO"/>
@@ -19,7 +18,6 @@
 			
 		<typeAlias type="com.star.user.domain.UserVO" alias="UserVO"/>	
 
-=======
 		<typeAlias type="com.star.board.domain.BoardVO" alias="boardVO"/>
 		<typeAlias type="com.star.answer.domain.AnswerVO" alias="answerVO"/>
 		<typeAlias type="com.star.pet.domain.PetVO" alias="petVO"/>
@@ -31,7 +29,8 @@
 		<typeAlias type="com.star.user.domain.UserVO" alias="UserVO"/>
     <typeAlias type="com.star.review.domain.ReviewDTO" alias="reviewDTO"/>
     <typeAlias type="com.star.report.domain.ReportDTO" alias="reportDTO"/>
->>>>>>> 2e65e6094530990fde383ecbea84ef5ba2260698
+   	 	<typeAlias type="com.star.review.domain.ReviewDTO" alias="reviewDTO"/>
+    	<typeAlias type="com.star.report.domain.ReportDTO" alias="reportDTO"/>
 	</typeAliases>
 
 	<environments default="mysql">
@@ -48,7 +47,6 @@
 	
 	<mappers>
 		<mapper resource="com/star/mybatis/mapper/userMapper.xml"/>
-<<<<<<< HEAD
 
 		<mapper resource="com/star/mybatis/mapper/boardMapper.xml"/>
 
@@ -61,13 +59,14 @@
 		<mapper resource="com/star/mybatis/mapper/questMapper.xml"/>
 		<mapper resource="com/star/mybatis/mapper/reportMapper.xml"/>
 		<mapper resource="com/star/mybatis/mapper/reviewMapper.xml"/> 
-=======
 		<mapper resource="com/star/mybatis/mapper/boardMapper.xml"/>
  		<mapper resource="com/star/mybatis/mapper/boardMapper.xml"/>
  		<mapper resource="com/star/mybatis/mapper/useMapper.xml"/>
  		<mapper resource="com/star/mybatis/mapper/reportMapper.xml"/>
     <mapper resource="com/star/mybatis/mapper/reviewMapper.xml"/>
->>>>>>> 2e65e6094530990fde383ecbea84ef5ba2260698
+ 		<mapper resource="com/star/mybatis/mapper/useMapper.xml"/>
+ 		<mapper resource="com/star/mybatis/mapper/reportMapper.xml"/>
+   	    <mapper resource="com/star/mybatis/mapper/reviewMapper.xml"/>
 	</mappers>
 </configuration>
 

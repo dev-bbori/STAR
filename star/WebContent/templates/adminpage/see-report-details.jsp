@@ -1,19 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>관리자 페이지</title>
 <link rel="stylesheet"
-EAD
 	href="${pageContext.request.contextPath}/static/css/adminpage/adminconstructor.css">
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/static/css/adminpage/see-report-detail.css">
-
-	href="../../static/css/adminpage/adminconstructor.css">
-<link rel="stylesheet"
-	href="../../static/css/adminpage/see-report-detail.css">
 
 <%-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -48,23 +44,23 @@ EAD
 				<table class="contents">
 					<tr>
 						<td>신고 게시물 번호</td>
-						<td>1</td>
+						<td><c:out value="${report.reportId}"/></td>
 					</tr>
 					<tr>
 						<td>게시물 번호</td>
-						<td>134</td>
+						<td><c:out value="${report.useNumber}"/></td>
 					</tr>
 					<tr>
 						<td>신고자 이름</td>
-						<td>김진</td>
+						<td><c:out value="${report.userName}"/></td>
 					</tr>
 					<tr>
 						<td>신고유형</td>
-						<td>펫시터관련</td>
+						<td><c:out value="${report.reportTitle}"/></td>
 					</tr>
 					<tr>
 						<td>작성자ID</td>
-						<td>q1w2e3r4</td>
+						<td><c:out value="${report.userId}"/></td>
 					</tr>
 					<tr>
 						<td>작성일</td>
@@ -72,7 +68,7 @@ EAD
 					</tr>
 					<tr>
 						<td>신고내용</td>
-						<td>펫시터가 퀘스트로 올렸던 우리 뽀삐 산책도 안시켜주고 이베리코산 돼지고기도 안맥이고 이상한 냉동삼겹살같은거나 맥이고 그래요. 처벌해주세요!</td>
+						<td><c:out value="${report.reportContent}"/></td>
 						</tr>
 				</table>
 				<form class="container">
@@ -85,7 +81,7 @@ EAD
 					</tr>
 				</table>
 				<div class="button-box">
-				<input type="button" name="go-to-answer-list" value="신고목록" onClick="location.href='reportlist.jsp'"/>
+				<input type="button" name="go-to-answer-list" value="신고목록" onClick="location.href='${pageContext.request.contextPath}/templates/adminpage/reportlist.jsp'"/>
 				<input type="submit" name="submit-answer" value="답변등록"/>
 				</div>
 				</form>

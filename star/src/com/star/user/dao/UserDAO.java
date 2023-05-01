@@ -72,8 +72,8 @@ public class UserDAO {
 		return sqlSession.selectOne("user.selectSitterdetail", userNumber);
 	}
 //	펫시터 찾기
-	public List<UserVO> selectAllSitter(){
-		return sqlSession.selectList("user.selectAllSitter");
+	public List<UserVO> selectAllSitter(String keyword){
+		return sqlSession.selectList("user.selectAllSitter", keyword);
 	}
 
 	public List<UserVO> selectCurrentSitters(){

@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="review">
-	<select id="selectAll" resultType="reviewDTO">
-		select review_number, review_comment, review_date, review_updatedate, review_star, u.use_number, user_number
-		from tbl_use u join tbl_review r
-		on u.use_number = r.use_number
-	</select>
-</mapper>
+
    <!-- 전체목록 -->
    <select id="selectAll" resultType="reviewDTO">
       select review_number, review_comment, review_date, review_updatedate, review_star, a.* from
@@ -27,8 +22,6 @@
       delete from tbl_review where review_number = #{reviewNumber}
    </delete>
 </mapper>
-
-
 
 
 

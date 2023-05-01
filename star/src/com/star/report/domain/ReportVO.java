@@ -6,46 +6,46 @@ public class ReportVO {
 	private Long userNumber;
 	private String reportContent;
 	private Long useNumber;
-
+	
 	public ReportVO() {;}
 
-	public final Long getReportId() {
+	public Long getReportId() {
 		return reportId;
 	}
 
-	public final void setReportId(Long reportId) {
+	public void setReportId(Long reportId) {
 		this.reportId = reportId;
 	}
 
-	public final String getReportTitle() {
+	public String getReportTitle() {
 		return reportTitle;
 	}
 
-	public final void setReportTitle(String reportTitle) {
+	public void setReportTitle(String reportTitle) {
 		this.reportTitle = reportTitle;
 	}
 
-	public final Long getUserNumber() {
+	public Long getUserNumber() {
 		return userNumber;
 	}
 
-	public final void setUserNumber(Long userNumber) {
+	public void setUserNumber(Long userNumber) {
 		this.userNumber = userNumber;
 	}
 
-	public final String getReportContent() {
+	public String getReportContent() {
 		return reportContent;
 	}
 
-	public final void setReportContent(String reportContent) {
+	public void setReportContent(String reportContent) {
 		this.reportContent = reportContent;
 	}
 
-	public final Long getUseNumber() {
+	public Long getUseNumber() {
 		return useNumber;
 	}
 
-	public final void setUseNumber(Long useNumber) {
+	public void setUseNumber(Long useNumber) {
 		this.useNumber = useNumber;
 	}
 
@@ -81,4 +81,5 @@ public class ReportVO {
 	}
 	
 	
+
 }

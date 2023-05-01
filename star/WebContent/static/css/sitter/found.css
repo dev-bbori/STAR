@@ -764,3 +764,31 @@ label.label_chk {
     background-size: 21px auto;
     user-select: none;
 }
+
+.searchseoul {
+	margin-left:20px;
+	margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.56);
+	
+}
+
+.search-container{
+	margin-left:18px;
+	display: flex;
+}
+
+.search-container input {
+	width: 200px;
+    height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.search-container button{
+	margin-left: 5px;
+	border: none;
+    width: 25px;
+    border-radius: 5px;
+}

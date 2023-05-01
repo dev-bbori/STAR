@@ -1,9 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<<<<<<< HEAD
-=======
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
->>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +13,6 @@
     <div class="wrap show">
 	<header id="menu">
         <section>
-            <div>
 			<div>
                 <img style="width: 150px; height: 150px; margin-left: -90px; margin-top: -33px;" src="../../static/image/3.png">
                 </div>
@@ -31,6 +27,7 @@
             </ul>
         </section>
    	 </header>
+   	 </div>
         <form id="product_filter_form" method="get">
             <div class="listpage">
                 <div class="sub_top_wrap">
@@ -58,30 +55,22 @@
                     <div class="info">
                         <p class="badge">
                         </p>
-<<<<<<< HEAD
-                        <h2>강형욱 돌봄이</h2>
                         <div class="score_cnt">
                         </div>
-                        <p class="address">#돌봄이 이수증 #반려견 훈련 강사 #행동 상담 전문</p>
-=======
                         <h2><c:out value="${user.userName}"/> 돌봄이</h2>
                         <div class="score_cnt">
                         </div>
                         <p class="address">#<c:out value="${user.userAge}"/>세 #<c:out value="${user.userGender}"/> #<c:out value="${user.userAddress}"/></p>
->>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
                         <div class="benefit_wrap">
                         </div>
                     </div>
                     <div class="comment">
                         <strong>돌봄이 자기소개</strong>
-
-<<<<<<< HEAD
-                        <div class="">지금 우리의 옆에 같이 있는 가족 반려견 우리 아이들에 대해 얼마나 알고 계신가요? 서로를 위해 우리 아이들은 우리들의 옆에 정말 가까이 있습니다.
-                            가까이 있으면서 문제가 생기기는 일은 당연한 일입니다. 가까운 사이 일수록 더욱 지치기도 쉽고 다투기도 잦습니다. 저는 우리 아이들에게 그리고 보호자님에게 서로의
-                            마음으로 하는 소통의 창을 열어드리고자 합니다. </div>
-=======
-                        <div class=""><c:out value="${user.userContent}"/></div>
->>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
+                        <div class="sitterphone"><c:out value="${user.userContent}"/></div>
+                    </div>
+                    <div class="comment">
+                        <strong>돌봄이 연락처</strong>
+                        <div><c:out value="${user.userPhonenumber}"/></div>
                     </div>
                 </div>
             </div>
@@ -90,11 +79,7 @@
                 <div style="display:flex;flex-direction:row;margin-top:27px">
                     <img src="https://wayopet.com/static/images/trainer_detail/img_career_1.png" style="width:32px;height:32px">
                     <div style="margin-top:4px;margin-left:18px">
-<<<<<<< HEAD
-                        <p style="font-weight:500;font-size:17px;color:#333333;letter-spacing:-0.2px">대표 경력</p><p style="font-size:15px;color:#777777;line-height:20px;margin-top:10px">방문훈련 전문, 동물병원근무, 행동교정 전문</p>
-=======
                         <p style="font-weight:500;font-size:17px;color:#333333;letter-spacing:-0.2px">돌보미 만족도</p><p style="font-size:15px;color:rgb(255,167,38);line-height:20px;margin-top:10px"><c:out value="${user.userStar}"/>점</p>
->>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
                     </div>
                 </div>
                 <div style="display:flex;flex-direction:row;margin-top:27px">
@@ -108,11 +93,7 @@
                     <img src="	https://wayopet.com/static/images/trainer_detail/img_career_3.png" style="width:32px;height:32px">
                     <div style="margin-top:4px;margin-left:18px">
                         <p style="font-weight:500;font-size:17px;color:#333333;letter-spacing:-0.2px">방문 지역</p>
-<<<<<<< HEAD
-                        <p style="font-size:15px;color:#777777;line-height:20px;margin-top:10px"> 강남구, 서초구, 동대문구, 의정부시 , 성남시, 용인시, 시흥시</p>
-=======
                         <p style="font-size:15px;color:#777777;line-height:20px;margin-top:10px"><c:out value="${user.userAddress}"/></p>
->>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
                     </div>
                 </div>
                 <div style="margin-top: 42px;">

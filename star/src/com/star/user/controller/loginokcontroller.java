@@ -10,7 +10,7 @@ import javax.servlet.http.HttpSession;
 import com.star.Result;
 import com.star.user.dao.UserDAO;
 
-public class LoginOkController {
+public class loginokcontroller {
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		req.setCharacterEncoding("UTF-8");
 		UserDAO userDAO = new UserDAO();

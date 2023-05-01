@@ -2,13 +2,15 @@ package com.star.user;
 
 import java.io.IOException;
 
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.star.Result;
-import com.star.use.controller.CareListController;
+import com.star.user.controller.Joinokcontroller;
+/*import com.star.use.controller.CareListController;
 import com.star.use.controller.CareListOkController;
 import com.star.user.controller.ChangeAddressOkController;
 import com.star.user.controller.ChangeAgeOkController;
@@ -19,9 +21,10 @@ import com.star.user.controller.Joinokcontroller;
 import com.star.user.controller.LoginOkController;
 import com.star.user.controller.MyInfoController;
 import com.star.user.controller.PetSitterFormController;
-import com.star.user.controller.PetSitterFormOkController;
+import com.star.user.controller.PetSitterFormOkController;*/
 import com.star.user.controller.SitterDetailOkController;
 import com.star.user.controller.SitterListOkController;
+import com.star.user.controller.loginokcontroller;
 
 
 public class UserFrontController extends HttpServlet {
@@ -41,7 +44,7 @@ public class UserFrontController extends HttpServlet {
 		}
 		
 		else if(target.equals("loginok")) {
-			result = new LoginOkController().execute(req, resp);
+			result = new loginokcontroller().execute(req, resp);
 		}
 
 		else if(target.equals("join")) {
@@ -50,7 +53,7 @@ public class UserFrontController extends HttpServlet {
 		}
 		
 		else if(target.equals("resetPWok")) {
-			result = new LoginOkController().execute(req, resp);
+			result = new loginokcontroller().execute(req, resp);
 		}
 
 		else if(target.equals("resetPW")) {
@@ -64,7 +67,7 @@ public class UserFrontController extends HttpServlet {
 		}
 		
 		else if(target.equals("findPW")) {
-			result = new LoginOkController().execute(req, resp);
+			result = new loginokcontroller().execute(req, resp);
 		}
 		
 		else if(target.equals("login")) {
@@ -83,37 +86,39 @@ public class UserFrontController extends HttpServlet {
 		}else if(target.equals("sitterDetailOk")) {
 			result = new SitterDetailOkController().execute(req, resp);
 		
-		}else if(target.equals("myInfo")) {
-			result = new MyInfoController().execute(req, resp);
-			
-		}else if(target.equals("changeNameOk")) {
-			result = new ChangeNameOkController().execute(req, resp);
-			
-		}else if(target.equals("changeAddressOk")) {
-			result = new ChangeAddressOkController().execute(req, resp);
-			
-		}else if(target.equals("changePhoneNumberOk")) {
-			result = new ChangePhoneNumberOkController().execute(req, resp);
-			
-		}else if(target.equals("changeAgeOk")) {
-			result = new ChangeAgeOkController().execute(req, resp);
-			
-		}else if(target.equals("changeGenderOk")) {
-			result = new ChangeGenderOkController().execute(req, resp);
-			
-		}else if(target.equals("petsitterform")) {
-			result = new PetSitterFormController().execute(req, resp);
-			
-		}else if(target.equals("petsitterformOk")) {
-		result = new PetSitterFormOkController().execute(req, resp);
-		
-		}else if(target.equals("careList")) {
-			result = new CareListController().execute(req, resp);
-			
-		}else if(target.equals("careListOk")) {
-			result = new CareListOkController().execute(req, resp);
-			
-		}
+		} /*
+			 * else if(target.equals("myInfo")) { result = new
+			 * MyInfoController().execute(req, resp);
+			 * 
+			 * }else if(target.equals("changeNameOk")) { result = new
+			 * ChangeNameOkController().execute(req, resp);
+			 * 
+			 * }else if(target.equals("changeAddressOk")) { result = new
+			 * ChangeAddressOkController().execute(req, resp);
+			 * 
+			 * }else if(target.equals("changePhoneNumberOk")) { result = new
+			 * ChangePhoneNumberOkController().execute(req, resp);
+			 * 
+			 * }else if(target.equals("changeAgeOk")) { result = new
+			 * ChangeAgeOkController().execute(req, resp);
+			 * 
+			 * }else if(target.equals("changeGenderOk")) { result = new
+			 * ChangeGenderOkController().execute(req, resp);
+			 * 
+			 * }else if(target.equals("petsitterform")) { result = new
+			 * PetSitterFormController().execute(req, resp);
+			 * 
+			 * }else if(target.equals("petsitterformOk")) { result = new
+			 * PetSitterFormOkController().execute(req, resp);
+			 * 
+			 * }else if(target.equals("careList")) { result = new
+			 * CareListController().execute(req, resp);
+			 * 
+			 * }else if(target.equals("careListOk")) { result = new
+			 * CareListOkController().execute(req, resp);
+			 * 
+			 * }
+			 */
 			
 		//여기까지 작업공간
 		if(result != null) {

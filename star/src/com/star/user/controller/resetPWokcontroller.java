@@ -23,7 +23,6 @@ public Result execute(HttpServletRequest req, HttpServletResponse resp) throws I
 	UserDAO userdao = new UserDAO();
 
 	
-	userdao.resetPW(userId);
 
 		result.setRedirect(true);
 		result.setPath("login.user");
