@@ -23,6 +23,7 @@ import com.star.user.controller.MyInfoController;
 import com.star.user.controller.PetSitterFormController;
 import com.star.user.controller.PetSitterFormOkController;*/
 import com.star.user.controller.SitterDetailOkController;
+import com.star.user.controller.loginokcontroller;
 /*import com.star.user.controller.SitterListOkController;
 import com.star.user.controller.loginokcontroller;*/
 
@@ -44,9 +45,9 @@ public class UserFrontController extends HttpServlet {
 			result = new Joinokcontroller().execute(req, resp);
 		}
 		
-		/*else if(target.equals("loginok")) {
+		else if(target.equals("loginok")) {
 			result = new loginokcontroller().execute(req, resp);
-		}*/
+		}
 
 		else if(target.equals("join")) {
 			result = new Result();

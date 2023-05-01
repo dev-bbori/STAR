@@ -37,10 +37,7 @@ where user_id = #{userId}
 </select>
 	
 	
-<insert id="insert" parameterType="userVO">
-		insert into tbl_user(user_id, user_password, user_name, user_address1, user_address2, user_address3, user_phonenumber, user_age, user_status)
-		values(#{userId}, #{userPassword}, #{userName}, #{userAddress1}, #{userAddress2}, #{userAddress3}, #{userPhonenumber}, #{userAge}, #{userStatus})
-	</insert>
+
 	
 	<select id="selectSitter" resultType="UserVO">
 		select user_name from tbl_user 
