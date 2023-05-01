@@ -23,8 +23,9 @@ import com.star.user.controller.MyInfoController;
 import com.star.user.controller.PetSitterFormController;
 import com.star.user.controller.PetSitterFormOkController;*/
 import com.star.user.controller.SitterDetailOkController;
-import com.star.user.controller.SitterListOkController;
-import com.star.user.controller.loginokcontroller;
+/*import com.star.user.controller.SitterListOkController;
+import com.star.user.controller.loginokcontroller;*/
+
 
 
 public class UserFrontController extends HttpServlet {
@@ -43,18 +44,18 @@ public class UserFrontController extends HttpServlet {
 			result = new Joinokcontroller().execute(req, resp);
 		}
 		
-		else if(target.equals("loginok")) {
+		/*else if(target.equals("loginok")) {
 			result = new loginokcontroller().execute(req, resp);
-		}
+		}*/
 
 		else if(target.equals("join")) {
 			result = new Result();
 			result.setPath("templates/loginpage/join.jsp");
 		}
 		
-		else if(target.equals("resetPWok")) {
+		/*else if(target.equals("resetPWok")) {
 			result = new loginokcontroller().execute(req, resp);
-		}
+		}*/
 
 		else if(target.equals("resetPW")) {
 			result = new Result();
@@ -66,9 +67,9 @@ public class UserFrontController extends HttpServlet {
 			result.setPath("templates/loginpage/findPW.jsp");
 		}
 		
-		else if(target.equals("findPW")) {
+		/*else if(target.equals("findPW")) {
 			result = new loginokcontroller().execute(req, resp);
-		}
+		}*/
 		
 		else if(target.equals("login")) {
 			result = new Result();
@@ -80,13 +81,17 @@ public class UserFrontController extends HttpServlet {
 			result.setPath("templates/mainpage.jsp");
 			
 		
-		}else if(target.equals("sitterList")) {
-			result = new SitterListOkController().execute(req, resp);
-			
-		}else if(target.equals("sitterDetailOk")) {
-			result = new SitterDetailOkController().execute(req, resp);
-		
-		} /*
+		}
+//		else if(target.equals("sitterList")) {
+		/*String target = req.getRequestURI().replace("/", "").split("\\.")[0];
+		Result result = new Result();
+		if(target.equals("sitterList")) {
+			result = new SitterListOkController().execute(req, resp);			
+		}
+		else if(target.equals("sitterDetailOk")) {
+			result = new SitterDetailOkController().execute(req, resp);		
+		} */
+		/*
 			 * else if(target.equals("myInfo")) { result = new
 			 * MyInfoController().execute(req, resp);
 			 * 
@@ -120,6 +125,81 @@ public class UserFrontController extends HttpServlet {
 			 * }
 			 */
 			
+	/*	}else if(target.equals("changeNameOk")) {
+			result = new ChangeNameOkController().execute(req, resp);
+			
+		}else if(target.equals("changeAddressOk")) {
+			result = new ChangeAddressOkController().execute(req, resp);
+			
+		}else if(target.equals("changePhoneNumberOk")) {
+			result = new ChangePhoneNumberOkController().execute(req, resp);
+			
+		}else if(target.equals("changeAgeOk")) {
+			result = new ChangeAgeOkController().execute(req, resp);
+			
+		}else if(target.equals("changeGenderOk")) {
+			result = new ChangeGenderOkController().execute(req, resp);
+			
+		}else if(target.equals("petsitterform")) {
+			result = new PetSitterFormController().execute(req, resp);
+			
+		}else if(target.equals("petsitterformOk")) {
+		result = new PetSitterFormOkController().execute(req, resp);
+		
+		}*/
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+				
+				
+				
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				
+						
+					
+						
+						
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		//여기까지 작업공간
 		if(result != null) {
 			if(result.isRedirect()) {

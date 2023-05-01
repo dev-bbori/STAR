@@ -14,9 +14,9 @@ public class Criteria {
    
    public Criteria(int page, int total) {
    //   한 페이지에 출력되는 게시글의 개수
-      rowCount = 5;
+      rowCount = 6;
    //   한 페이지에서 나오는 페이지 버튼의 개수
-      int pageCount = 5;
+      int pageCount = 6;
       
       offset = (page - 1) * rowCount;
       endPage = (int)(Math.ceil(page / (double)pageCount) * pageCount);

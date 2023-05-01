@@ -7,7 +7,7 @@
       select review_number, review_comment, review_date, review_updatedate, review_star, a.* from
       tbl_review r join
       (select u1.user_name, u2.* from tbl_use u2 join tbl_user u1 on u1.user_number
-      = u2.user_number) a on r.use_number = a.use_number limit #{offset},
+      = u2.user_number) a on r.use_number = a.use_number where user_number = #{userNumber} limit #{offset},
       #{rowCount}
    </select>
 

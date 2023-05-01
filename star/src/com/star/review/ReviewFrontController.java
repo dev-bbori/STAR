@@ -29,6 +29,20 @@ public class ReviewFrontController extends HttpServlet {
 			 * if(target.equals("reviewDeleteOk")) { result= new
 			 * ReviewDeleteOkController().execute(req, resp); }
 			 */
+		 if (target.equals("review")) { 
+			 result = new Result();
+		  result.setPath("/templates/mypage/review.jsp"); }
+		/*
+		 * else if(target.equals("reviewLoadOk")) { result = new
+		 * ReviewLoadOkController().execute(req, resp); }else
+		 * if(target.equals("reviewDeleteOk")) { result= new
+		 * ReviewDeleteOkController().execute(req, resp); }
+		 */
+ 
+      
+      
+      
+      
       if (result != null) {
          if (result.isRedirect()) {
             resp.sendRedirect(result.getPath());

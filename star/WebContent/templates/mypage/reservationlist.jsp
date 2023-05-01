@@ -3,11 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage/reservationlist.css">
-=======
 <link rel="stylesheet" href="../../static/css/mypage/reservationlist.css">
->>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
 <link rel="stylesheet" type="text/css"
 	href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 <meta charset="UTF-8">
@@ -64,76 +61,10 @@
 			</nav>
 			<div class="align_rt">
 				<div class="reverse_list">
-					<section>
-						<h3>예약 내역</h3>
-					</section>
 					<section class="list_cancel">
 						<h3>이용 내역</h3>
 						<ul class="list_wrap">
-							<li class="reservation-detail">
-								<div>
-									<p class="pic">
-										<img alt=""
-											src="https://image.goodchoice.kr/resize_354x184/adimg_new/4354/24465/90e1e317e0b5a9c2c7cbb7828c8faced.jpg">
-									</p>
-									<a href="" class="product-title"> 
-										<i class="bg_w">이용완료</i>
-										<strong>신촌 라싸</strong> 
-										<span>03.27 월 - 03.27 월 • 대실</span>
-									</a>
-									<p class="btn_re">
-										<a href="">다시 예약</a>
-									</p>
-								</div>
-							</li>
-							<li class="reservation-detail">
-								<div>
-									<p class="pic">
-										<img alt=""
-											src="https://image.goodchoice.kr/resize_354x184/adimg_new/4354/24465/90e1e317e0b5a9c2c7cbb7828c8faced.jpg">
-									</p>
-									<a href="" class="product-title"> 
-										<i class="bg_w">이용완료</i>
-										<strong>신촌 라싸</strong> 
-										<span>03.27 월 - 03.27 월 • 대실</span>
-									</a>
-									<p class="btn_re">
-										<a href="">다시 예약</a>
-									</p>
-								</div>
-							</li>
-							<li class="reservation-detail">
-								<div>
-									<p class="pic">
-										<img alt=""
-											src="https://image.goodchoice.kr/resize_354x184/adimg_new/4354/24465/90e1e317e0b5a9c2c7cbb7828c8faced.jpg">
-									</p>
-									<a href="" class="product-title"> 
-										<i class="bg_w">이용완료</i>
-										<strong>신촌 라싸</strong> 
-										<span>03.27 월 - 03.27 월 • 대실</span>
-									</a>
-									<p class="btn_re">
-										<a href="">다시 예약</a>
-									</p>
-								</div>
-							</li>
-							<li class="reservation-detail">
-								<div>
-									<p class="pic">
-										<img alt=""
-											src="https://image.goodchoice.kr/resize_354x184/adimg_new/4354/24465/90e1e317e0b5a9c2c7cbb7828c8faced.jpg">
-									</p>
-									<a href="" class="product-title"> 
-										<i class="bg_w">이용완료</i>
-										<strong>신촌 라싸</strong> 
-										<span>03.27 월 - 03.27 월 • 대실</span>
-									</a>
-									<p class="btn_re">
-										<a href="">다시 예약</a>
-									</p>
-								</div>
-							</li>
+							
 						</ul>
 					</section>
 				</div>
@@ -141,9 +72,8 @@
 		</div>
 	</div>
 </body>
-<<<<<<< HEAD
 <script src="${pageContext.request.contextPath}/static/js/mypage/header.js"></script>
-=======
+<script src="${pageContext.request.contextPath}/static/js/mypage/reservationlist.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/mypage/header.js"></script>
 <script src="../../static/js/mypage/header.js"></script>
->>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
 </html>

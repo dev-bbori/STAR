@@ -38,14 +38,22 @@
       <div id="content" class="sub_wrap my_wrap">
          <nav>
             <ul>
-               <li><a href="info.jsp">내 정보관리</a></li>
-               <li><a href="petsitterform.jsp">돌보미 신청</a></li>
-               <li><a href="carelist.jsp">돌봄내역</a></li>
-               <li><a href="reservationlist.jsp">이용내역</a></li>
-               <li><a class="mypagetag review-tag"
-                  style="font-size: 18px; font-weight: bold; color: #388e3c;"
-                  href="#">이용후기</a></li>
-               <li><a class="report-tag" href="#">신고목록</a></li>
+              	<li>
+						<a href="javascript:location.href='myInfo.user'">내 정보 관리</a>
+					</li>
+						<li>
+						<a href="javascript:location.href='${pageContext.request.contextPath}/petsitterform.user'">돌보미 신청</a>
+					</li>
+					<li>
+						<a href="javascript:location.href='${pageContext.request.contextPath}/careList.use'">돌봄 내역</a>
+					</li>
+					<li>
+						<a href="reservationlist.jsp">이용 내역</a>
+					</li>
+					<li>
+						<a  style="font-size: 18px; font-weight: bold; color: #388e3c;" href="javascript:location.href='${pageContext.request.contextPath}/review.review'">이용후기</a>
+						<a class="report-tag" href="javascript:location.href='${pageContext.request.contextPath}/report.report'">신고목록</a>
+					</li>
             </ul>
          </nav>
          <div class="align_rt">

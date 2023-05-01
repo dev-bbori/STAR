@@ -16,12 +16,11 @@ $('.review-tag').on("click", function() {
    location.href = `${contextPath}/review.review`;
 })
 
-$('.reprot-tag').on("click", function() {
+$('.report-tag').on("click", function() {
    location.href = `${contextPath}/report.report`;
 })
 /*게시글 불러오기 ajax 함수*/
 function next_load() {
-   console.log("들어옴");
    $.ajax({
       type: "POST",
       data: { page: page },
@@ -112,7 +111,7 @@ function showList(result) {
          <li>
               <div>
                현재 게시글이 없습니다. 게시글 작성을 해보세요!
-            </div>
+              </div>
          </li>
       `
    }

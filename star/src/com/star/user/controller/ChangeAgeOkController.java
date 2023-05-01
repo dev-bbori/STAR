@@ -17,8 +17,6 @@ public class ChangeAgeOkController {
 		Result result = new Result();
 		HttpSession session = req.getSession();
 		userDAO.updateAge(Integer.parseInt(req.getParameter("userAge")),(Long)session.getAttribute("userNumber"));  
-//		Long.valueOf(req.getParameter("userNumber"));
-		
 		
 		result.setRedirect(true);
 		result.setPath("myInfo.user");
