@@ -13,15 +13,18 @@
 	</select>
 	
 	<select id="selectSitterdetail" resultType="UserVO">
-		select user_name, user_content, user_age, user_gender, user_address, user_star
+		select user_name, user_content, user_age, user_gender, user_address, user_star, user_phonenumber
 		from tbl_user
 		where user_title is not null and user_content is not null and user_number = ${userNumber}
 	</select>
 	
 	<select id="selectAllSitter" resultType="UserVO">
-		select user_name, user_star, user_age, user_gender, user_address
+		select user_name, user_star, user_age, user_gender, user_address, user_number
 		from tbl_user
-		where user_title is not null and user_content is not null
+		where user_title is not null and user_content is not null 
+		<if test="keyword != null">
+			and user_address like concat('%', #{keyword}, '%')
+		</if>
 	</select>
 
 

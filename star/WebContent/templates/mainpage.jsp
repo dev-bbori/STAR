@@ -59,17 +59,15 @@
       <div class="main_spot"><a href="https://www.goodchoice.kr/more/eventView/3056"></a></div>
     </div> -->
 
-		<div class="recommend">
-			<h2>돌봄서비스</h2>
-			<ul>
-				<li><img
-					src="https://image.goodchoice.kr/images/web_v3/b2b_banner.png"
-					alt="사진삽입공간"><strong>돌봄이용</strong><br>이용하고 싶어요 ?</li>
-				<li><img
-					src="https://image.goodchoice.kr/images/web_v3/re_jalnan.png"
-					alt="사진삽입공간"><strong>돌봄신청</strong><br>신청하고 싶어요 ?</li>
-			</ul>
-		</div>
+
+        <div class="recommend">
+            <h2>돌봄서비스</h2>
+            <ul>
+                <li><img src="//image.goodchoice.kr/images/web_v3/b2b_banner.png" alt="사진삽입공간"><strong>돌봄이용</strong><br>이용하고 싶어요 ?</li>
+                <li><img src="//image.goodchoice.kr/images/web_v3/re_jalnan.png" alt="사진삽입공간"><strong>돌봄신청</strong><br>신청하고 싶어요 ?</li>
+            </ul>
+        </div>
+
 
 		<div class="appdown">
 			<p>
@@ -379,7 +377,6 @@
 	</footer>
 
 <script>
-
 const menu = document.querySelector('#menu');
 const bannertext = document.querySelector('#bannertext');
 const banner = document.querySelectorAll('.bannertext');

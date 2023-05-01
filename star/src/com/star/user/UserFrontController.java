@@ -32,6 +32,7 @@ public class UserFrontController extends HttpServlet {
 		Result result = new Result();
 		if(target.equals("loginOk")) {
 			result = new LoginOkController().execute(req,resp);
+			
 		}else if(target.equals("sitterList")) {
 			result = new SitterListOkController().execute(req, resp);
 			

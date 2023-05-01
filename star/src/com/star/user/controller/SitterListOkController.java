@@ -19,8 +19,11 @@ public Result execute(HttpServletRequest req, HttpServletResponse resp) throws I
 	UserDAO userDAO = new UserDAO();
 	Result result = new Result();
 	JSONArray jsonArray = new JSONArray();
-	userDAO.selectAllSitter().stream().map(user -> new JSONObject(user)).forEach(jsonArray::put);
-	req.setAttribute("users", jsonArray.toString());	
+	String keyword = req.getParameter("keyword");
+	userDAO.selectAllSitter(keyword).stream().map(user -> new JSONObject(user)).forEach(jsonArray::put);
+	req.setAttribute("users", jsonArray.toString());
+	req.setAttribute("keyword", keyword);
+	
 	result.setPath("templates/sitter/found.jsp");
 	
 	

@@ -7,6 +7,7 @@ import org.apache.ibatis.session.SqlSession;
 
 import com.star.mybatis.config.MyBatisConfig;
 import com.star.report.domain.ReportDTO;
+import com.star.user.domain.UserVO;
 
 public class ReportDAO {
 public SqlSession sqlSession;
@@ -28,4 +29,10 @@ public SqlSession sqlSession;
    public void delete(Long reprotId) {
       sqlSession.delete("report.delete", reprotId);
    }
+   
+//   관리자 신고목록 상세보기
+	public ReportDTO selectReportDetailAdmin(Long reportId) {
+		return sqlSession.selectOne("report.selectReportDetailAdmin", reportId);
+		
+	}
 }

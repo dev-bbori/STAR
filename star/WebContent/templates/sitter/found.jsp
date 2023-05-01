@@ -43,11 +43,11 @@
                                 </span>
                             </div>
                         </section>
-                        <h3>상세조건</h3>
+<!--                         <h3>상세조건</h3>
                         <div class="btn_wrap">
                             <button type="button submit">초기화</button>
                             <button type="submit">적용</button>
-                        </div>
+                        </div> -->
                        
                         <section>
                         <strong>돌봄이 유형</strong>
@@ -65,7 +65,19 @@
                                 </li>
                             </ul>
                         </section>
-                        <section><strong>서울<button type="button">모두 보기</button></strong>
+                 <div id=search>
+                  <form action="${pageContext.request.contextPath}/sitterList.user" name="search-form">
+			        <div>
+			        	<div class="searchseoul"><strong>구 검색</strong></div>
+			        </div>
+                    <div class="search-container">
+                        <input type="text" autocomplete="off" name="keyword" value="${keyword}">
+                        <button type="submit"><img src="${pageContext.request.contextPath}/static/image/search.png"
+                                width="20px"></button>
+                    </div>
+                </form>
+                </div>
+                         <!-- <section><strong>서울<button type="button">모두 보기</button></strong>
                             <ul class="hide_type half">
                                 <li>
                                 	<input type="checkbox" id="tmino_0" class="inp_chk" value="56">
@@ -85,7 +97,6 @@
                                         value="332"><label for="tmino_23" class="label_chk">마포구</label></li>
                             </ul>
                         </section>
-<<<<<<< HEAD
                         <section><strong>경기도<button type="button">모두 보기</button></strong>
                             <ul class="hide_type half">
                                 <li><input type="checkbox" id="tmino_31" class="inp_chk"
@@ -102,8 +113,7 @@
                                         value="232"><label for="tmino_36" class="label_chk">용인</label></li>
                             </ul>
                         </section>
-=======
->>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
+                        </section> -->
                         <!-- <section><strong><button type="button">모두 보기</button></strong>
                             <ul class="hide_type half">
                                 <li><input type="checkbox" id="tmino_37" class="inp_chk"
@@ -122,7 +132,7 @@
                         </section> -->
                     </div>
                     <div class="list_wrap">
-                        <div class="top_sort">
+    <!--                     <div class="top_sort">
                                 <button type="button" class="btn_map"></button>
                              <div class="pc">
                                 <div class="btn_wrap width_4">
@@ -131,17 +141,17 @@
                                     </button>
                                 </div>
                             </div> 
-                        </div>
+                        </div> -->
                         <div id="poduct_list_area">
-<<<<<<< HEAD
+
                             <li class="list_4 adcno6">
                                 <a href="http://localhost:8090/day01/templates/sitter/view.jsp">
-=======
+								</a>
                         	<ul>
                         	</ul>
                          <%--    <li class="list_4 adcno6">
                                 <a href="${pageContext.request.contextPath}/sitterDetailOk.user?userNumber=1">
->>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
+
                                     <p class="pic">
                                         <img class="lazy" src="https://image-notepet.akamaized.net/seimage/20170802%2F46f8a4d185319d0b9bed3053090ae7c0.jpg" style="display: inline;">
                                     </p>
@@ -160,13 +170,13 @@
                                         </div>
                                     </div>
                                 </a>
-<<<<<<< HEAD
+
                             </li>
                             <li class="list_4 adcno6">
-=======
+
                             </li> --%>
                            <!--  <li class="list_4 adcno6">
->>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
+
                                 <a href="http://localhost:8090/day01/templates/sitter/view.jsp">
                                     <p class="pic">
                                         <img class="lazy" src="https://image-notepet.akamaized.net/seimage/20170802%2F46f8a4d185319d0b9bed3053090ae7c0.jpg" style="display: inline;">
@@ -249,11 +259,11 @@
                                         </div>
                                     </div>
                                 </a>
-<<<<<<< HEAD
+
                             </li>
-=======
+
                             </li> -->
->>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
+						</li>
                         </div>
                     </div>
                 </div>
@@ -304,13 +314,13 @@ document.addEventListener('scroll', () => {
 });
 
 </script>
-<<<<<<< HEAD
-=======
+
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script>
 	let users = `${users}`;
 	let contextPath = `${pageContext.request.contextPath}`;
+	console.log(users);
 </script>
 <script src="${pageContext.request.contextPath}/static/js/sitter/list.js"></script>
->>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
+
 </html>
