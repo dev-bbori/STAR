@@ -8,14 +8,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.star.Result;
-import com.star.use.controller.CareListController;
-import com.star.use.controller.CareListOkController;
 import com.star.user.controller.ChangeAddressOkController;
 import com.star.user.controller.ChangeAgeOkController;
 import com.star.user.controller.ChangeGenderOkController;
 import com.star.user.controller.ChangeNameOkController;
 import com.star.user.controller.ChangePhoneNumberOkController;
-import com.star.user.controller.LoginOkController;
 import com.star.user.controller.MyInfoController;
 import com.star.user.controller.PetSitterFormController;
 import com.star.user.controller.PetSitterFormOkController;
@@ -30,10 +27,14 @@ public class UserFrontController extends HttpServlet {
 
 		String target = req.getRequestURI().replace("/", "").split("\\.")[0];
 		Result result = new Result();
+<<<<<<< HEAD
 		if(target.equals("loginOk")) {
 			result = new LoginOkController().execute(req,resp);
 			
 		}else if(target.equals("sitterList")) {
+=======
+		if(target.equals("sitterList")) {
+>>>>>>> 30c738eaebde3bd8a13ff8a0902f3ea2a3df084f
 			result = new SitterListOkController().execute(req, resp);
 			
 		}else if(target.equals("sitterDetailOk")) {
@@ -63,12 +64,6 @@ public class UserFrontController extends HttpServlet {
 		}else if(target.equals("petsitterformOk")) {
 		result = new PetSitterFormOkController().execute(req, resp);
 		
-		}else if(target.equals("careList")) {
-			result = new CareListController().execute(req, resp);
-			
-		}else if(target.equals("careListOk")) {
-			result = new CareListOkController().execute(req, resp);
-			
 		}
 		
 		

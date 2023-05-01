@@ -40,12 +40,13 @@
       <div id="content" class="sub_wrap my_wrap">
          <nav>
             <ul>
-               <li><a href="info.jsp">내 정보관리</a></li>
-               <li><a href="petsitterform.jsp">돌보미 신청</a></li>
-               <li><a href="carelist.jsp">돌봄내역</a></li>
-               <li><a href="reservationlist.jsp">이용내역</a></li>
-               <li><a class="review-tag" href="#">이용후기</a></li>
-               <li><a class="mypageatag report-tag" href="#">신고목록</a></li>
+					<li><a  href="javascript:location.href='myInfo.user'">내 정보 관리</a></li>
+					<li><a href="javascript:location.href='${pageContext.request.contextPath}/petsitterform.user'">돌보미 신청</a></li>
+					<li>
+					<a href="javascript:location.href='${pageContext.request.contextPath}/careList.use'">돌봄 내역</a></li>
+					<li><a href="reservationlist.jsp">이용 내역</a></li>
+					<li><a class="review-tag"href= "javascript:location.href='${pageContext.request.contextPath}/review.review'">이용후기</a>
+               <li><a class="mypageatag report-tag" href="javascript:location.href='${pageContext.request.contextPath}/report.report'">신고목록</a></li>
             </ul>
          </nav>
          <div class="align_rt">
@@ -71,12 +72,14 @@
          <div class="spin"></div>
       </div>
    </div>
-   </div>
 
 </body>
 
 <script src="${pageContext.request.contextPath}/static/js/mypage/header.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script> let contextPath = "${pageContext.request.contextPath}" </script>
+<script src="../../static/js/modal/modal.js"></script>
+<script src="../../static/js/mypage/report.js"></script>
 <script>
    let contextPath = "${pageContext.request.contextPath}"
 </script>

@@ -41,7 +41,7 @@
 			<nav>
 				<ul>
 					<li>
-						<a class="active" href="info.jpg">내 정보 관리</a>
+						<a class="active" href="javascript:location.href='myInfo.user'">내 정보 관리</a>
 					</li>
 					<li>
 						<a href="javascript:location.href='${pageContext.request.contextPath}/petsitterform.user'">돌보미 신청</a>
@@ -53,8 +53,8 @@
 						<a href="reservationlist.jsp">이용 내역</a>
 					</li>
 					<li>
-						<a href="review.jsp">이용후기</a>
-						<a href="report.jsp">신고목록</a>
+						<a href="javascript:location.href='${pageContext.request.contextPath}/review.review'">이용후기</a>
+						<a href="javascript:location.href='${pageContext.request.contextPath}/report.report'">신고목록</a>
 					</li>
 				</ul>
 			</nav>
@@ -72,7 +72,7 @@
 							<div class="pw_input">
 								<div class="pw_input__title">
 									<b>이름</b>
-									<span class="title__uinfo"><c:out value="${user.userName}"/><c:out value="${user.userNumber}"/></span>
+									<span class="title__uinfo"><c:out value="${user.userName}"/></span>
 								</div>
 								<section class="modifying-section" style="display: none;">
 									<p id="namewrap" class="inp_wrap remove form-errors">

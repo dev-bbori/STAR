@@ -29,6 +29,7 @@ function next_load() {
          $('.wrap-loading').removeClass('display-none');
       },
       success: function(result) {
+		console.log(result);
          result = JSON.parse(result);
          if (result) {
             console.log(result);

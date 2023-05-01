@@ -7,6 +7,7 @@ import java.util.HashMap;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -21,9 +22,8 @@ public class ReportLoadOkController implements Action {
    public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
       resp.setContentType("text/html;charset=utf-8");
       ReportDAO reportDAO = new ReportDAO();
-      Result result = new Result();
       JSONArray jsonArray = new JSONArray();
-      
+      HttpSession session = req.getSession();
       
       int page = Integer.parseInt(req.getParameter("page"));
       
@@ -31,11 +31,10 @@ public class ReportLoadOkController implements Action {
       
       pagable.put("offset", (page - 1) * 5);
       pagable.put("rowCount", 5);
+      pagable.put("userNumber",(Long)session.getAttribute("userNumber"));
+      
       
       reportDAO.selectAll(pagable).stream().map(report -> new JSONObject(report)).forEach(jsonArray::put);
-      
-      
-      System.out.println("리포트컨트롤러들어옴");
 
       PrintWriter out = resp.getWriter();
       out.print(jsonArray.toString());
