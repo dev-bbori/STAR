@@ -106,10 +106,6 @@ where user_id = #{userId}
 		set user_title = #{userTitle} , user_content = #{userContent}
 		where user_number = #{userNumber}
 	</update>
-	<select id="login" resultType="Long">
-		select user_number from tbl_user where user_id = #{userId} and user_password = #{userPassword}
-	</select>
-
 
 </mapper>
 
