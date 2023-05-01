@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 body { padding: 0px; margin: 0px;
     font-family: 'Pretendard';
     font-size: 14px;
@@ -35,7 +33,7 @@ body { padding: 0px; margin: 0px;
     width: 973px;
     height: 320px;
     margin: 100px auto 78px auto;
-    background: url(//image.goodchoice.kr/images/web_v3/bg_appdown.png) center center no-repeat;
+    background: url(https://image.goodchoice.kr/images/web_v3/bg_appdown.png) center center no-repeat;
     background-size: cover;
     text-align: center;
     margin-bottom: 150px;
@@ -413,7 +411,7 @@ header section .btn_srch {
   justify-content: space-between;
   background-color: #388e3c ;
   /*transition: all 300ms ease;*/
-  z-index:9999;
+  
 }
 
 #menu.active {
@@ -438,6 +436,3 @@ header section .btn_srch {
 color: #388e3c;
 
 }
-
-
-

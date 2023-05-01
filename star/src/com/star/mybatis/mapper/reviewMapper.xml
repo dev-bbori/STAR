@@ -2,19 +2,13 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="review">
 
-
+	<!-- 메인화면 리뷰 가져오기-->
 	<select id="selectMainReviews" resultType="ReviewVO">
 	select review_number, review_comment, review_date, review_updatedate, review_star, use_number
 	from tbl_review r
 	order by r.review_updatedate desc
 	</select>
 	
-
-	<select id="selectAll" resultType="reviewDTO">
-		select review_number, review_comment, review_date, review_updatedate, review_star, u.use_number, user_number
-		from tbl_use u join tbl_review r
-		on u.use_number = r.use_number
-	</select>
 
    <!-- 전체목록 -->
    <select id="selectAll" resultType="reviewDTO">

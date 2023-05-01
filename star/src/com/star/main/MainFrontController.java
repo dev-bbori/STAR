@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.star.Result;
-import com.star.main.controller.SelectCurrentSitterController;
+import com.star.main.controller.MainController;
 
 public class MainFrontController extends HttpServlet {
 	
@@ -20,9 +20,11 @@ public class MainFrontController extends HttpServlet {
 		Result result = null;
 		
 		if(target.equals("main")) {
-			result = new SelectCurrentSitterController().execute(req, resp);
 			System.out.println("호잇");
-		}
+			result = new MainController().execute(req, resp);
+		} 
+		
+			
 		    
 	
 		
